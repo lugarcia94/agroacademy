@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --mode development",
     "production": "webpack-dev-server --mode production",
-    "deploy": "webpack --mode production" 
+    "deploy": "webpack --mode production"
   },
   "author": "Thomaz T. O. Toyama <thomazot@gmail.com>",
   "license": "ISC",

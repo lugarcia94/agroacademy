@@ -57,13 +57,6 @@ config.module = {
                 miniCssExtractPlugin.loader,
                 'css-loader',
                 {
-                    loader: 'stylus-loader',
-                    options: {
-                        import: path.resolve(__dirname, './src/core/variants/index.styl')
-                    }
-
-                },
-                {
                     loader: 'postcss-loader',
                     options: {
                         plugins: (loader) => [
@@ -77,6 +70,13 @@ config.module = {
                             })
                         ]
                     }
+                },
+                {
+                    loader: 'stylus-loader',
+                    options: {
+                        import: path.resolve(__dirname, './src/core/variants/index.styl')
+                    }
+
                 }
             ]
         }
