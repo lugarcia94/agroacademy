@@ -10,14 +10,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-var controller = new ScrollMagic.Controller({ globalSceneOptions: { duration: 500 } });
+var controller = new ScrollMagic.Controller({ globalSceneOptions: { duration: 700 } });
 
 new ScrollMagic.Scene({ triggerElement: "#about" })
     .setClassToggle(".navigator li[data-id='about']", "active") // add class toggle
     .addTo(controller);
 
-new ScrollMagic.Scene({ triggerElement: "#header" })
-    .setClassToggle(".navigator li[data-id='header']", "active") // add class toggle
+new ScrollMagic.Scene({ triggerElement: "#full" })
+    .setClassToggle(".navigator li[data-id='full']", "active") // add class toggle
     .addTo(controller);
 
 new ScrollMagic.Scene({ triggerElement: "#newsletter" })
