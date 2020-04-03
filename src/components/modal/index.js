@@ -1,10 +1,5 @@
 import './style';
 
-$('.navigator li').on('click', function () {
-    $('.navigator li').removeClass("active")
-    $(this).addClass("active")
-})
-
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -15,16 +10,32 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-function getScrollParent(node) {
-    if (node == null) {
-        return null;
-    }
+var controller = new ScrollMagic.Controller({ globalSceneOptions: { duration: 500 } });
 
-    if (node.scrollHeight > node.clientHeight) {
-        return node;
-    } else {
-        return getScrollParent(node.parentNode);
-    }
-}
+new ScrollMagic.Scene({ triggerElement: "#about" })
+    .setClassToggle(".navigator li[data-id='about']", "active") // add class toggle
+    .addTo(controller);
 
-getScrollParent()
+new ScrollMagic.Scene({ triggerElement: "#header" })
+    .setClassToggle(".navigator li[data-id='header']", "active") // add class toggle
+    .addTo(controller);
+
+new ScrollMagic.Scene({ triggerElement: "#newsletter" })
+    .setClassToggle(".navigator li[data-id='newsletter']", "active") // add class toggle
+    .addTo(controller);
+
+new ScrollMagic.Scene({ triggerElement: "#student" })
+    .setClassToggle(".navigator li[data-id='student']", "active") // add class toggle
+    .addTo(controller);
+
+new ScrollMagic.Scene({ triggerElement: "#teacher" })
+    .setClassToggle(".navigator li[data-id='teacher']", "active") // add class toggle
+    .addTo(controller);
+new ScrollMagic.Scene({ triggerElement: "#company" })
+    .setClassToggle(".navigator li[data-id='company']", "active") // add class toggle
+    .addTo(controller);
+new ScrollMagic.Scene({ triggerElement: "#footer" })
+    .setClassToggle(".navigator li[data-id='footer']", "active") // add class toggle
+    .addTo(controller);
+
+

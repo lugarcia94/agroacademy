@@ -13,6 +13,8 @@
     <title>Agro Academy</title>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
 
 </head>
 
@@ -38,11 +40,13 @@
         </div>
 
         <ul class="navigator">
-            <li class="active" data-id="header"><a href="#header"></a></li>
+            <li data-id="header"><a href="#header"></a></li>
             <li data-id="about"><a href="#about"></a></li>
             <li data-id="newsletter"><a href="#newsletter"></a></li>
+            <li data-id="student"><a href="#student"></a></li>
             <li data-id="teacher"><a href="#teacher"></a></li>
             <li data-id="company"><a href="#company"></a></li>
+            <li data-id="footer"><a href="#footer"></a></li>
         </ul>
     </header>
 
@@ -61,8 +65,9 @@
             </div>
             <div class="content__full-right"></div>
             <img src="../img/curv.png" class="curv" />
-            <img src="../img/seta.png" class="seta">
-
+            <a href="#about">
+                <img src="../img/seta.png" class="seta">
+            </a>
         </div>
     </section>
 
@@ -107,11 +112,13 @@
                 <input type="text" name="email" placeholder="E-mail: joao@email.com.br" />
                 <input type="submit" />
             </form>
-            <img src="../img/seta.png" class="seta">
+            <a href="#student">
+                <img src="../img/seta.png" class="seta">
+            </a>
         </div>
     </section>
 
-    <section class="content__student">
+    <section class="content__student" id="student">
         <img src="../img/yellow.png" class="right__float" />
         <div class="wrapper">
             <div class="content__student-left"><img src="../img/student.png" /></div>
@@ -169,7 +176,9 @@
                 </p>
                 <a href="/">Empresas, comecem aqui</a>
             </div>
-            <img src="../img/seta.png" class="seta">
+            <a href="#footer">
+                <img src="../img/seta.png" class="seta">
+            </a>
         </div>
         <img src="../img/blue.png" class="left__float" />
         <ul class="content__company-list">
