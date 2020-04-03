@@ -1,0 +1,269 @@
+body
+    font-family: 'Montserrat', sans-serif
+    overflow-x: hidden
+
+.wrapper
+    max-width: 1330px
+    padding: 0 15px
+    margin: 0 auto
+
+.header
+    display: flex
+    align-items: center
+    justify-content: space-between
+    max-width: 1330px
+    padding: 0 15px
+    margin: 0 auto
+    padding-top: 30px
+    background: #e4e5e2
+    box-shadow: 450px 0 #e4e5e2, -450px 0 #e4e5e2
+
+    *
+        z-index: 9
+
+    &__logo
+        max-width: 312px
+        display: flex
+        align-items: center
+
+        a
+            max-width: 230px
+
+        .blog
+            color: #000
+            border: 1px solid #000
+            border-radius: 25px
+            display: block
+            width: 80px
+            margin-left: 10px
+            height: 30px
+            text-align: center
+            line-height: 30px
+            font-size: 15px
+            transition: all 150ms ease-in-out
+
+            &:hover
+                text-decoration: none
+                background: #000
+                color: #fff
+
+    &__search
+        form
+            position: relative
+
+        label
+            font-weight: 700
+            margin-right: 5px
+
+        input[type=search]
+            border-radius: 25px
+            width: 210px
+            box-shadow: none
+            -webkit-appearance: none
+            height: 43px
+            border: none
+            padding-left: 20px
+            font-size: 16px
+            color: #000
+
+        input[type=submit]
+            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAABy1BMVEUAAAA6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojqgkvv9AAAAmXRSTlMADyApIREBCUyv4/X99uW3VQ0H2/9WChOm+/78tBoVuPjBcy4MKm27xRwLoNFYBSc5LwNOyLBxvSuU8/mpHYnYxxti6oQUufckdDx49IBmdas44oGeNuxbjM9PtUs/+igiCJcZ3F/SN2wYwGHMUhDLMybw64u+qjXudmVZUc0EMd5k8T3fQg6tY5yazkSo1wYXZ5WdesOjJa7Kx8DyAAAB00lEQVR4Ae3RaVNSYRiH8ZtcRDmY0BXEIQs1orQsTwsEVqaCZWhqZdmSGmYLVrbTvmSLlVHZ0setAYZBZp4Dvi1/r5/r/OfMLSv+fZZVFRWVVdVSrhprbZ1N0+z1qxscUg6ndQ15dWtdUpJ7nQcAXQfAu75RStiwEfA1Nbc4Nvk3B2zAlq1iqrVNh23b28W5Y2eHw9i1G9hjETN7gaBFQvvCQKRzf02tDgfERONB6DpkdPeQ1SvRGPQdFrUjGj39cjROX2Bg8NhQ17BIywgcVx/I0QQn5KSN0VOG/JV5eRrG3KISiqOfMc7iO1fw2fMeLoyLihVGJybHuCgFElMQEpVLMB2Vy1euSoHWa2ZJEmaqpMhkwCy5DlMJKXLjplky68UzK0Vu3Qa/qESnoVmKdMOdSlG6CzMOWcJ5D+63i9KDFN6HS0/9KAKPxUQb+JJS4EkYnj4TtecvAN/L/BOjIQ6vXova8BwZsTeZ67ztf6dD+L3ZRoocrT44/yE2ogH2weqSG9pchDz94yezjVyxkEgGPWR9Hoia/UcqW8ynReTL128LQ4vfO8RMKLfR6ZYyuX5ki59lF/IrothQm7AD/F5GIUavTmQxLcuR9ofGXfIfWfEHRfZXMB8BBdwAAAAASUVORK5CYII=')
+            -webkit-appearance: none
+            font-size: 0
+            width: 40px
+            height: 40px
+            background-color: #fff
+            border-radius: 25px
+            border: none
+            position: absolute
+            right: 0
+            background-size: 90%
+            background-position: center
+            cursor: pointer
+
+    &__links
+        max-width: 200px
+        display: flex
+        align-items: center
+
+        a
+            color: #000
+            font-size: 15px
+
+        .active
+            color: #000
+            border: 1px solid #000
+            border-radius: 25px
+            display: block
+            width: 80px
+            margin-left: 10px
+            height: 30px
+            text-align: center
+            line-height: 30px
+            font-size: 15px
+            transition: all 150ms ease-in-out
+
+            &:hover
+                text-decoration: none
+                background: #000
+                color: #fff
+
+.content
+    &__full
+        background: #e4e5e2
+        position: relative
+
+        .wrapper
+            min-height: 92vh
+
+            > .curv
+                position: absolute
+                left: 0
+                max-width: 670px
+                bottom: 50px
+
+        &-left
+            img
+                position: absolute
+                top: 20%
+                max-width: 430px
+                left: 17%
+
+            span
+                font-size: 40px
+                font-weight: 900
+                max-width: 280px
+                display: block
+
+                strong
+                    position: relative
+                    z-index: 1
+                    font-weight: 900
+
+                    &:before
+                        content: ''
+                        width: 250px
+                        height: 18px
+                        background: #e76265
+                        display: block
+                        bottom: 0
+                        position: absolute
+                        right: 0
+                        z-index: -1
+
+            p
+                max-width: 640px
+                font-size: 18px
+                display: block
+                margin: 50px 0
+
+            ul
+                list-style-type: none
+                display: flex
+                max-width: 530px
+                justify-content: space-between
+
+                li
+                    a
+                        background: #00b9d8
+                        color: #fff
+                        font-size: 15px
+                        width: 250px
+                        height: 50px
+                        text-align: center
+                        line-height: 50px
+                        font-weight: 700
+                        display: block
+                        border-radius: 25px
+                        border: 1px solid #00b9d8
+                        transition: all 150ms ease-in-out
+
+                        &:hover
+                            text-decoration: none
+                            background: #fff
+                            color: #00b9d8
+                            border: 1px solid #fff
+
+        .wrapper
+            display: flex
+            justify-content: space-between
+            align-items: center
+
+    &__about
+        margin: 90px 0
+
+        ul
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+            margin-top: 60px
+
+            li
+                width: 32%
+                text-align: center
+
+                img
+                    max-width: 200px
+                    margin: 0 auto
+
+                span
+                    font-size: 20px
+                    display: block
+                    font-weight: 600
+                    text-align: center
+                    max-width: 270px
+                    margin: 0 auto
+                    margin: 10px auto
+                    height: 50px
+
+                p
+                    font-size: 14px
+                    font-weight: 500
+                    text-align: center
+                    padding: 0 35px
+
+        h2
+            font-size: 40px
+            text-align: center
+
+            strong
+                font-weight: 400
+                position: relative
+
+                &:before
+                    content: ''
+                    width: 200px
+                    height: 12px
+                    background: #e76265
+                    display: block
+                    bottom: 5px
+                    position: absolute
+                    right: 0
+                    z-index: -1
+
+.green
+    position: absolute
+    right: -15px
+    max-width: 450px
+    top: -80px
+    z-index: 2
+
+.seta
+    width: 75px
+    bottom: 10px
+    z-index: 999
+    left: 50%
+    transform: translateX(-50%)
+    position: absolute
+    cursor: pointer
+    animation-duration: 0.5s
+    animation-name: slidein
+    animation-iteration-count: infinite
+    animation-direction: alternate
+
+@keyframes slidein
+    from
+        bottom: 10px
+
+    to
+        bottom: 20px
