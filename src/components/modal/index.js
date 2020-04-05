@@ -39,3 +39,4 @@ new ScrollMagic.Scene({ triggerElement: "#footer" })
     .addTo(controller);
 
 
+AOS.init();
