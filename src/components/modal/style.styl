@@ -557,6 +557,7 @@ body
 
     &__company
         position: relative
+        padding-bottom: 120px
 
         .wrapper
             display: flex
@@ -1135,3 +1136,22 @@ body
         visibility: visible
         opacity: 1
         max-height: none
+
+ul.content__company-list
+    display: flex
+    justify-content: space-between
+    max-width: 1330px
+    padding: 0 15px
+    margin: 0 auto
+    flex-wrap: wrap
+
+    @media (max-width: 767px)
+        margin: 30px auto
+        justify-content: space-around
+
+    li
+        flex: 0 0 15%
+
+        @media (max-width: 767px)
+            flex: 0 0 27%
+            margin: 10px 0
