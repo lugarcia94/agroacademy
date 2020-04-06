@@ -985,3 +985,153 @@ body
         visibility: visible
         opacity: 1
         max-height: none
+
+.register__popup
+    background: #eaeaea82
+    width: 100%
+    height: 100%
+    z-index: 9999999999
+    top: 0
+    position: fixed
+    visibility: hidden
+    opacity: 0
+    max-height: 0
+    transition: all 0.3s ease-in-out
+
+    &-close
+        position: absolute
+        right: 15px
+        top: 15px
+        max-width: 20px
+        cursor: pointer
+
+    &-content
+        max-width: 1160px
+        width: 100%
+        position: fixed
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        display: flex
+        background: #ffffff
+        min-height: 730px
+        border-radius: 7px
+
+        @media (max-width: 767px)
+            background: #00b9d8
+
+        @media (max-width: 991px)
+            flex-wrap: wrap
+            justify-content: space-between
+            max-width: 100%
+            width: 100%
+            padding: 0 15px
+
+    &-right
+        width: 50%
+        background: #00b9d8
+        padding: 120px 70px
+
+        @media (max-width: 767px)
+            width: 100%
+            padding: 120px 15px
+
+        >h2
+            font-size: 30px
+            color: #fff
+            text-transform: uppercase
+            font-weight: 900
+            display: block
+            text-align: center
+
+        >span
+            color: #fff
+            display: block
+            text-align: center
+            margin-top: 0px
+            margin-bottom: 30px
+
+        form
+            max-width: 340px
+            margin: 0 auto
+
+            @media (max-width: 767px)
+                max-width: 100%
+
+            label
+                width: 100%
+                display: flex
+                justify-content: space-between
+                margin-bottom: 15px
+
+                span
+                    color: #000
+                    font-size: 12px
+                    width: 100%
+                    display: block
+                    text-align: right
+
+                input
+                    width: 100%
+                    height: 40px
+                    border-radius: 4px
+                    background: #c4e2ed
+                    border: none
+                    padding-left: 20px
+                    color: #969696
+                    font-size: 15px
+
+                select
+                    width: 48%
+                    height: 45px
+                    color: #969696
+                    font-size: 15px
+                    border: none
+                    background: #c5e2ed
+
+            input[type='submit']
+                background: #087dc4
+                border: none
+                width: 100%
+                border-radius: 25px
+                height: 45px
+                color: #fff
+                text-transform: uppercase
+                font-weight: 700
+                font-size: 15px
+                cursor: pointer
+
+                &:hover
+                    opacity: 0.8
+
+    &-left
+        width: 50%
+        padding: 150px 60px
+
+        @media (max-width: 767px)
+            display: none
+
+        span
+            margin-top: 300px
+            display: block
+            color: #595959
+            font-size: 15px
+            margin-bottom: 30px
+
+        .register__top
+            position: absolute
+            max-width: 490px
+            top: 0
+            left: -60px
+
+        .register__bottom
+            position: absolute
+            max-width: 360px
+            left: -250px
+            bottom: 0
+
+.on__register
+    .register__popup
+        visibility: visible
+        opacity: 1
+        max-height: none
