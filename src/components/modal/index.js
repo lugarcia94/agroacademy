@@ -48,3 +48,19 @@ $('.mobile__only').on('click', function () {
 $('.close').on('click', function () {
     $('body').removeClass('on__menu')
 })
+
+$('#login').on('click', function () {
+    $('body').addClass('on__login')
+})
+
+$('.login__popup-close').on('click', function () {
+    $('body').removeClass('on__login')
+})
+
+$('#register').on('click', function () {
+    $('body').addClass('on__register')
+})
+
+$('.register__popup-close').on('click', function () {
+    $('body').removeClass('on__register')
+})

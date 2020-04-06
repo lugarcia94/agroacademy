@@ -325,6 +325,9 @@ body
                 color: #ccc
                 font-size: 15px
 
+                @media (max-width: 991px)
+                    font-size: 13px
+
             input[type=submit]
                 position: absolute
                 width: 120px
@@ -333,6 +336,11 @@ body
                 color: #000
                 font-size: 17px
                 cursor: pointer
+
+                @media (max-width: 991px)
+                    width: 100%
+                    position: relative
+                    right: 0
 
                 &:hover
                     opacity: 0.8
@@ -862,3 +870,118 @@ body
     .mobile__menu
         left: 0
         visibility: visible
+
+.login__popup
+    background: #00000082
+    width: 100%
+    height: 100%
+    z-index: 9999999999
+    top: 0
+    position: fixed
+    visibility: hidden
+    opacity: 0
+    max-height: 0
+    transition: all 0.3s ease-in-out
+
+    &-content
+        max-width: 900px
+        position: fixed
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        display: flex
+
+        @media (max-width: 991px)
+            flex-wrap: wrap
+            justify-content: space-between
+            max-width: 100%
+            width: 100%
+            padding: 0 15px
+
+    &-left
+        width: 50%
+
+        img
+            height: 100%
+            max-height: 522px
+
+        @media (max-width: 991px)
+            display: none
+
+    &-close
+        position: fixed
+        right: 15px
+        top: 15px
+        max-width: 20px
+        cursor: pointer
+
+        @media (max-width: 991px)
+            right: 25px
+
+    &-right
+        width: 50%
+        background: #fff
+        border-top-right-radius: 7px
+        border-bottom-right-radius: 7px
+        padding: 90px 40px
+        max-height: 522px
+
+        @media (max-width: 991px)
+            max-height: none
+            width: 100%
+
+        h2
+            font-size: 30px
+            font-weight: 900
+            text-align: center
+
+        a
+            img
+                display: block
+                margin: 20px auto
+                max-width: 50px
+
+        span
+            font-size: 15px
+            color: #969696
+            text-align: center
+            width: 100%
+            display: block
+            margin-bottom: 10px
+
+        input:not([type='submit'])
+            width: 100%
+            margin-bottom: 10px
+            height: 45px
+            background: #ededed
+            border-radius: 5px
+            border: none
+            padding-left: 20px
+            color: #969696
+            font-size: 15px
+
+        input[type='submit']
+            background: #00b9d8
+            color: #fff
+            font-size: 15px
+            border-radius: 25px
+            height: 45px
+            width: 160px
+            margin: 0 auto
+            display: block
+            border: none
+            text-transform: uppercase
+            font-weight: 700
+            cursor: pointer
+
+            @media (max-width: 991px)
+                width: 100%
+
+            &:hover
+                opacity: 0.8
+
+.on__login
+    .login__popup
+        visibility: visible
+        opacity: 1
+        max-height: none
