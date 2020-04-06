@@ -40,3 +40,11 @@ new ScrollMagic.Scene({ triggerElement: "#footer" })
 
 
 AOS.init();
+
+
+$('.mobile__only').on('click', function () {
+    $('body').addClass('on__menu')
+})
+$('.close').on('click', function () {
+    $('body').removeClass('on__menu')
+})

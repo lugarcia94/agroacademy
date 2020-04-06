@@ -18,16 +18,28 @@ body
     background: #e4e5e2
     box-shadow: 450px 0 #e4e5e2, -450px 0 #e4e5e2
 
+    @media (max-width: 991px)
+        box-shadow: none
+        flex-wrap: wrap
+
     *
         z-index: 9
 
     &__logo
-        max-width: 312px
+        max-width: 33%
         display: flex
         align-items: center
 
+        @media (max-width: 991px)
+            max-width: 100%
+            width: 100%
+            justify-content: space-between
+
         a
             max-width: 230px
+
+            @media (max-width: 991px)
+                margin: 0 10px
 
         .blog
             color: #000
@@ -41,6 +53,9 @@ body
             line-height: 30px
             font-size: 15px
             transition: all 150ms ease-in-out
+
+            @media (max-width: 991px)
+                margin: 0
 
             &:hover
                 text-decoration: none
@@ -119,6 +134,9 @@ body
             max-width: 430px
             left: 15%
 
+            @media (max-width: 991px)
+                display: none
+
         .wrapper
             min-height: 92vh
 
@@ -128,12 +146,34 @@ body
                 max-width: 670px
                 bottom: 50px
 
+                @media (max-width: 991px)
+                    display: none
+
+        &-right
+            z-index: 999
+            width: 40%
+
+            @media (max-width: 991px)
+                width: 100%
+                margin: 100px 0
+                text-align: center
+
         &-left
+            @media (max-width: 991px)
+                z-index: 99999
+                width: 100%
+                text-align: center
+                margin: 10px 0
+
             span
                 font-size: 40px
                 font-weight: 900
                 max-width: 280px
                 display: block
+
+                @media (max-width: 991px)
+                    max-width: 100%
+                    width: 100%
 
                 strong
                     position: relative
@@ -157,11 +197,20 @@ body
                 display: block
                 margin: 50px 0
 
+                @media (max-width: 991px)
+                    text-align: center
+                    max-width: 100%
+
             ul
                 list-style-type: none
                 display: flex
                 max-width: 530px
                 justify-content: space-between
+
+                @media (max-width: 991px)
+                    max-width: 100%
+                    justify-content: center
+                    flex-wrap: wrap
 
                 li
                     a
@@ -178,6 +227,9 @@ body
                         border: 1px solid #00b9d8
                         transition: all 150ms ease-in-out
 
+                        @media (max-width: 991px)
+                            margin: 10px
+
                         &:hover
                             text-decoration: none
                             background: #fff
@@ -188,6 +240,9 @@ body
             display: flex
             justify-content: space-between
             align-items: center
+
+            @media (max-width: 991px)
+                flex-wrap: wrap
 
     &__about
         margin: 90px 0
@@ -202,6 +257,10 @@ body
             li
                 width: 32%
                 text-align: center
+
+                @media (max-width: 767px)
+                    width: 100%
+                    margin-bottom: 30px
 
                 img
                     max-width: 200px
@@ -325,17 +384,31 @@ body
 
         .wrapper
             display: flex
-            height: 100vh
+            min-height: 100vh
             align-items: center
+
+            @media (max-width: 991px)
+                flex-wrap: wrap
 
         &-left
             width: 50%
 
+            @media (max-width: 991px)
+                width: 100%
+                text-align: center
+
             img
                 max-width: 500px
 
+                @media (max-width: 991px)
+                    max-width: 100%
+
         &-right
             width: 50%
+
+            @media (max-width: 991px)
+                width: 100%
+                text-align: center
 
         h2
             font-size: 26px
@@ -368,7 +441,7 @@ body
             line-height: 43px
 
         p
-            font-size: 23px
+            font-size: 20px
             margin: 30px 0
 
         a
@@ -392,22 +465,39 @@ body
 
         .wrapper
             display: flex
-            height: 100vh
+            min-height: 100vh
             align-items: center
+
+            @media (max-width: 991px)
+                flex-wrap: wrap
 
         &-left
             width: 50%
 
+            @media (max-width: 991px)
+                width: 100%
+                text-align: center
+
             img
                 max-width: 500px
 
+                @media (max-width: 991px)
+                    max-width: 100%
+
         &-right
             width: 50%
+
+            @media (max-width: 991px)
+                width: 100%
+                text-align: center
 
         h2
             font-size: 26px
             text-align: left
             text-transform: uppercase
+
+            @media (max-width: 991px)
+                text-align: center
 
             strong
                 font-weight: 400
@@ -431,8 +521,12 @@ body
             max-width: 440px
             line-height: 43px
 
+            @media (max-width: 991px)
+                max-width: 100%
+                text-align: center
+
         p
-            font-size: 23px
+            font-size: 20px
             margin: 30px 0
 
         a
@@ -446,6 +540,9 @@ body
             font-size: 17px
             font-weight: 600
 
+            @media (max-width: 991px)
+                margin: 0 auto
+
             &:hover
                 text-decoration: none
                 opacity: 0.8
@@ -455,22 +552,39 @@ body
 
         .wrapper
             display: flex
-            height: 100vh
+            min-height: 100vh
             align-items: center
+
+            @media (max-width: 991px)
+                flex-wrap: wrap
 
         &-left
             width: 50%
 
+            @media (max-width: 991px)
+                width: 100%
+                text-align: center
+
             img
                 max-width: 500px
 
+                @media (max-width: 991px)
+                    max-width: 100%
+
         &-right
             width: 50%
+
+            @media (max-width: 991px)
+                width: 100%
+                text-align: center
 
         h2
             font-size: 26px
             text-align: left
             text-transform: uppercase
+
+            @media (max-width: 991px)
+                text-align: center
 
             strong
                 font-weight: 400
@@ -495,7 +609,7 @@ body
             line-height: 43px
 
         p
-            font-size: 23px
+            font-size: 20px
             margin: 30px 0
 
         a
@@ -508,6 +622,9 @@ body
             text-align: center
             font-size: 17px
             font-weight: 600
+
+            @media (max-width: 991px)
+                margin: 0 auto
 
             &:hover
                 text-decoration: none
@@ -544,6 +661,9 @@ body
     &__left
         width: 40%
 
+        @media (max-width: 767px)
+            width: 100%
+
         p
             font-size: 15px
 
@@ -558,6 +678,10 @@ body
     &__right
         width: 40%
         display: flex
+
+        @media (max-width: 767px)
+            width: 100%
+            z-index: 99
 
         li
             display: block
@@ -575,6 +699,9 @@ body
         display: flex
         justify-content: space-around
         margin-bottom: 30px
+
+        @media (max-width: 767px)
+            flex-wrap: wrap
 
 .green
     position: absolute
@@ -609,12 +736,18 @@ body
     max-width: 45px
     top: 0
 
+    @media (max-width: 991px)
+        z-index: -1
+
 .left__float
     position: absolute
     left: 0
     bottom: 0
     max-width: 45px
     transform: rotate(180deg)
+
+    @media (max-width: 991px)
+        z-index: -1
 
 .navigator
     display: flex
@@ -624,6 +757,10 @@ body
     max-width: 50px
     top: 50%
     transform: translateY(-50%)
+    z-index: 999999999
+
+    @media (max-width: 991px)
+        display: none
 
     li
         width: 50px
@@ -653,3 +790,75 @@ body
 
         a
             background: #000
+
+.mobile__only
+    display: none
+
+    @media (max-width: 991px)
+        display: block
+
+.mobile__menu
+    max-width: 60%
+    width: 100%
+    display: flex
+    justify-content: space-between
+
+    .close
+        display: none
+
+    > a
+        display: none
+
+    @media (max-width: 991px)
+        display: block
+        position: fixed
+        background: #e4e5e2
+        height: 100vh
+        top: 0
+        left: 0
+        z-index: 9999999
+        padding: 30px 15px
+        left: -100%
+        transition: all 0.3s ease-in-out
+        visibility: hidden
+
+        .close
+            display: flex
+            align-items: center
+            justify-content: center
+            position: absolute
+            color: #000
+            font-weight: 700
+            right: 5px
+            top: 5px
+            width: 30px
+            height: 30px
+            border-radius: 50%
+            border: 1px solid #000
+
+        .header__search
+            label
+                display: none
+
+            input[type=search]
+                width: 100%
+
+        > a
+            display: block
+            margin-bottom: 10px
+            max-width: 255px
+
+        .header__search
+            margin-bottom: 20px
+
+        .header__links
+            max-width: 100%
+            justify-content: space-between
+
+            a
+                width: 50%
+
+.on__menu
+    .mobile__menu
+        left: 0
+        visibility: visible

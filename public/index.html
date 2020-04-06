@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="author" content="Burguer">
-    <meta name="description" content="Burguer">
-    <meta name="keywords" content="Burguer">
+    <meta name="author" content="Agro Academy">
+    <meta name="description" content="Agro Academy">
+    <meta name="keywords" content="Agro Academy">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <title>Agro Academy</title>
@@ -25,21 +25,30 @@
     <img src="../img/green.png" class="green">
 
     <header class="header" id="header">
+
         <div class="header__logo">
+            <div class="mobile__only">
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAHdElNRQfkBAYPDQAvGDNYAAABW0lEQVRIx9XVvWqUQRQG4OcbIhgvIEXEtcnG7Uxl5UazFyAK3oMgWoTUCSFgYbAV78IgEojBxiAi+fEG1kILo5gsy66gEUzGIh+D5QwGou8wxXvgzPl7D8N/jwpc1DdMtnOaRjJ8ez4cO++IDj2qzXN+iplnW4PVRG/jiqNs9yh6HrRTSm1crYvKxXTQTaSL94U97HLNQBS9cRbBSkEBA+0K4zr6XvhVz2XGlDMZ0b9Y9/lvZfAPoBLcc1PPsi0waV4ra5hDKx6zVHf0hxbG7BUJaZHdRB7gTpF7tBv+SCnWtwRHLNZvfXcJY74WZbBQCe66peehHdA0ryVkRB946skpi+AkUOG8jr61tEwdlzOX6aVPXDcURW+NInhWtM7TvEv0Pm4UCmk7mEgpTdS3BM1gI5ENvC7U4isatkSHlmvTrIPsAjZdOF7bhr5v6dVRk1kfy76PJ6CD08dvSzEkyHLyYcIAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjAtMDQtMDZUMTU6MTM6MDArMDA6MDAc/DRSAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIwLTA0LTA2VDE1OjEzOjAwKzAwOjAwbaGM7gAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAASUVORK5CYII=" />
+            </div>
             <a href="/"><img src="../img/logo.png" /></a>
             <a href="/" class="blog">Blog</a>
         </div>
-        <div class="header__search">
-            <form action="" name="search">
-                <label>Cursos</label>
+        <div class="mobile__menu">
+            <div class="close">X</div>
+            <a href="/"><img src="../img/logo.png" /></a>
+            <div class="header__search">
+                <form action="" name="search">
+                    <label>Cursos</label>
 
-                <input type="search" placeholder="Buscar" />
-                <input type="submit" />
-            </form>
-        </div>
-        <div class="header__links">
-            <a href="/">Cadastre-se</a>
-            <a href="/" class="active">Entrar</a>
+                    <input type="search" placeholder="Buscar" />
+                    <input type="submit" />
+                </form>
+            </div>
+            <div class="header__links">
+                <a href="/">Cadastre-se</a>
+                <a href="/" class="active">Entrar</a>
+            </div>
         </div>
 
         <ul class="navigator">
@@ -67,7 +76,7 @@
                     <li><a href="/">Assista o vídeo!</a></li>
                 </ul>
             </div>
-            <div class="content__full-right" data-aos="fade-left"></div>
+            <div class="content__full-right" data-aos="fade-left"><img src="../img/full.png" /></div>
             <img src="../img/curv.png" class="curv" />
             <a href="#about">
                 <img src="../img/seta.png" class="seta">
@@ -77,7 +86,7 @@
 
     <section class="content__about" id="about">
         <img src="../img/blue.png" class="right__float" />
-        <div class="wrapper">
+        <div class="wrapper" data-aos="zoom-in-up">
             <h2>Por que a Agro Academy <strong>funciona?</strong></h2>
 
             <ul class="content__about-list">
@@ -108,18 +117,19 @@
         <img src="../img/blue.png" class="left__float" />
     </section>
 
-    <section class="content__newsletter" id="newsletter" data-aos="zoom-in-up">
-        <div class="wrapper">
+    <section class="content__newsletter" id="newsletter">
+        <div class="wrapper" data-aos="zoom-in-up">
             <h2>Tire suas dúvidas com um de nossos <strong>especialistas</strong></h2>
             <form name="" action="">
                 <input type="text" name="name" placeholder="Pergunta: Como eu calibro meu pulverizador?" />
                 <input type="text" name="email" placeholder="E-mail: joao@email.com.br" />
                 <input type="submit" />
             </form>
-            <a href="#student">
-                <img src="../img/seta.png" class="seta">
-            </a>
+
         </div>
+        <a href="#student">
+            <img src="../img/seta.png" class="seta">
+        </a>
     </section>
 
     <section class="content__student" id="student">
