@@ -20,9 +20,7 @@ new ScrollMagic.Scene({ triggerElement: "#full" })
     .setClassToggle(".navigator li[data-id='full']", "active") // add class toggle
     .addTo(controller);
 
-new ScrollMagic.Scene({ triggerElement: "#newsletter" })
-    .setClassToggle(".navigator li[data-id='newsletter']", "active") // add class toggle
-    .addTo(controller);
+
 
 new ScrollMagic.Scene({ triggerElement: "#student" })
     .setClassToggle(".navigator li[data-id='student']", "active") // add class toggle

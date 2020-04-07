@@ -39,7 +39,7 @@
             <a href="/"><img src="../img/logo.png" /></a>
             <div class="header__search">
                 <form action="" name="search">
-                    <label>Cursos</label>
+                    <label>Cursos<img src="../img/down.png" /></label>
 
                     <input type="search" placeholder="Buscar" />
                     <input type="submit" />
@@ -54,7 +54,6 @@
         <ul class="navigator">
             <li data-id="full"><a href="#full"></a></li>
             <li data-id="about"><a href="#about"></a></li>
-            <li data-id="newsletter"><a href="#newsletter"></a></li>
             <li data-id="student"><a href="#student"></a></li>
             <li data-id="teacher"><a href="#teacher"></a></li>
             <li data-id="company"><a href="#company"></a></li>
@@ -63,9 +62,11 @@
     </header>
 
     <section class="content__full" id="full">
-        <img src="../img/familia.png" />
+
         <div class="wrapper">
+
             <div class="content__full-left" data-aos="fade-right">
+                <img src="../img/familia.png" class="family" />
                 <span>Trazemos inovação ao <strong>aprendizado!</strong></span>
                 <p>Você vai estudar, praticar e aprender em uma comunidade que produz, discute e compartilha
                     conhecimento.
@@ -113,24 +114,26 @@
                         agricultura, gestão, mecanização e agricultura de precisão.</p>
                 </li>
             </ul>
+
+        </div>
+        <div class="content__newsletter">
+            <div class="wrapper" data-aos="zoom-in-up">
+                <h2>Tire suas dúvidas com um de nossos <strong>especialistas</strong></h2>
+                <form name="" action="">
+                    <input type="text" name="name" placeholder="Pergunta: Como eu calibro meu pulverizador?" />
+                    <input type="text" name="email" placeholder="E-mail: joao@email.com.br" />
+                    <input type="submit" />
+                </form>
+
+            </div>
+            <a href="#student">
+                <img src="../img/seta.png" class="seta">
+            </a>
         </div>
         <img src="../img/blue.png" class="left__float" />
     </section>
 
-    <section class="content__newsletter" id="newsletter">
-        <div class="wrapper" data-aos="zoom-in-up">
-            <h2>Tire suas dúvidas com um de nossos <strong>especialistas</strong></h2>
-            <form name="" action="">
-                <input type="text" name="name" placeholder="Pergunta: Como eu calibro meu pulverizador?" />
-                <input type="text" name="email" placeholder="E-mail: joao@email.com.br" />
-                <input type="submit" />
-            </form>
 
-        </div>
-        <a href="#student">
-            <img src="../img/seta.png" class="seta">
-        </a>
-    </section>
 
     <section class="content__student" id="student">
         <img src="../img/yellow.png" class="right__float" />
@@ -146,6 +149,9 @@
             </div>
         </div>
         <img src="../img/yellow.png" class="left__float" />
+        <a href="#teacher">
+            <img src="../img/seta.png" class="seta">
+        </a>
     </section>
 
     <section class="content__teacher" id="teacher">
@@ -169,6 +175,9 @@
                 <a href="/">Professores, comecem aqui</a>
             </div>
         </div>
+        <a href="#company">
+            <img src="../img/seta.png" class="seta">
+        </a>
         <img src="../img/greentwo.png" class="left__float" />
     </section>
 
@@ -190,15 +199,15 @@
                 </p>
                 <a href="/">Empresas, comecem aqui</a>
             </div>
-
+            <ul class="content__company-list">
+                <li class="content__company-item"><img src="../img/partner1.png" /></li>
+                <li class="content__company-item"><img src="../img/partner2.png" /></li>
+                <li class="content__company-item"><img src="../img/partner3.png" /></li>
+                <li class="content__company-item"><img src="../img/partner4.png" /></li>
+                <li class="content__company-item"><img src="../img/partner5.png" /></li>
+            </ul>
         </div>
-        <ul class="content__company-list">
-            <li class="content__company-item"><img src="../img/partner1.png" /></li>
-            <li class="content__company-item"><img src="../img/partner2.png" /></li>
-            <li class="content__company-item"><img src="../img/partner3.png" /></li>
-            <li class="content__company-item"><img src="../img/partner4.png" /></li>
-            <li class="content__company-item"><img src="../img/partner5.png" /></li>
-        </ul>
+
         <a href="#footer">
             <img src="../img/seta.png" class="seta">
         </a>
