@@ -198,7 +198,10 @@ body
                 position: absolute
                 left: 0
                 max-width: 670px
-                bottom: 50px
+                bottom: 10px
+
+                @media (max-width: 1024px) and (min-width: 992px)
+                    max-width: 500px
 
                 @media (max-width: 991px)
                     display: none
@@ -1002,6 +1005,7 @@ a.down__arrow
         top: 50%
         transform: translate(-50%, -50%)
         display: flex
+        width: 100%
 
         @media (max-width: 991px)
             flex-wrap: wrap
@@ -1135,6 +1139,9 @@ a.down__arrow
         min-height: 730px
         border-radius: 7px
 
+        @media (max-width: 1024px) and (min-width: 992px)
+            max-width: 85%
+
         @media (max-width: 767px)
             background: #00b9d8
 
@@ -1246,6 +1253,9 @@ a.down__arrow
             max-width: 490px
             top: 0
             left: -60px
+
+            @media (max-width: 1024px) and (min-width: 992px)
+                max-width: 420px
 
         .register__bottom
             position: absolute
