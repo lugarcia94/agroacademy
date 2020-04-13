@@ -207,10 +207,18 @@ body
 
             @media (max-width: 991px)
                 width: 100%
-                margin: 100px 0
+                margin: 10px 0
                 text-align: center
+                z-index: 9999
+
+                >img
+                    z-index: 9999
 
         &-left
+            .content__full-links
+                @media (max-width: 991px)
+                    display: none
+
             .family
                 position: absolute
                 top: -15%
@@ -263,40 +271,6 @@ body
                     text-align: center
                     max-width: 100%
 
-            ul
-                list-style-type: none
-                display: flex
-                max-width: 530px
-                justify-content: space-between
-
-                @media (max-width: 991px)
-                    max-width: 100%
-                    justify-content: center
-                    flex-wrap: wrap
-
-                li
-                    a:not(.down__arrow)
-                        background: #00b9d8
-                        color: #fff
-                        font-size: 15px
-                        width: 250px
-                        height: 50px
-                        text-align: center
-                        line-height: 50px
-                        font-weight: 700
-                        display: block
-                        border-radius: 25px
-                        border: 1px solid #00b9d8
-                        transition: all 150ms ease-in-out
-
-                        @media (max-width: 991px)
-                            margin: 10px
-
-                        &:hover
-                            text-decoration: none
-                            background: transparent
-                            color: #2b374b
-
         .wrapper
             display: flex
             justify-content: space-between
@@ -308,6 +282,9 @@ body
     &__about
         position: relative
         min-height: 100vh
+
+        @media (max-width: 991px)
+            padding: 30px 0
 
         ul
             display: flex
@@ -431,6 +408,9 @@ body
         position: relative
         background: #e9e9e9
 
+        @media (max-width: 991px)
+            padding-bottom: 70px
+
         &-depoiment
             strong
                 display: block
@@ -537,6 +517,9 @@ body
     &__student
         position: relative
 
+        @media (max-width: 991px)
+            padding-bottom: 70px
+
         .wrapper
             display: flex
             min-height: 100vh
@@ -625,6 +608,9 @@ body
 
     &__company
         position: relative
+
+        @media (max-width: 991px)
+            padding: 100px 0
 
         .wrapper
             display: flex
@@ -731,6 +717,9 @@ body
     padding: 100px 0
     position: relative
 
+    @media (max-width: 991px)
+        padding: 50px 0
+
     &__content
         display: flex
 
@@ -743,9 +732,15 @@ body
         p
             font-size: 15px
 
+            @media (max-width: 991px)
+                text-align: center
+
         strong
             display: block
             margin: 20px 0
+
+            @media (max-width: 991px)
+                text-align: center
 
             a
                 color: #12b8dc
@@ -758,6 +753,11 @@ body
         @media (max-width: 767px)
             width: 100%
             z-index: 99
+            flex-wrap: wrap
+
+            ul
+                width: 100%
+                text-align: center
 
         li
             display: block
@@ -1280,3 +1280,39 @@ body.on__menu:before
     top: 0
     left: 0
     z-index: 2222222
+
+.content__full-links
+    list-style-type: none
+    display: flex
+    max-width: 530px
+    justify-content: space-between
+
+    @media (max-width: 991px)
+        max-width: 100%
+        justify-content: center
+        flex-wrap: wrap
+        margin: 30px 0
+        padding-bottom: 50px
+
+    li
+        a:not(.down__arrow)
+            background: #00b9d8
+            color: #fff
+            font-size: 15px
+            width: 250px
+            height: 50px
+            text-align: center
+            line-height: 50px
+            font-weight: 700
+            display: block
+            border-radius: 25px
+            border: 1px solid #00b9d8
+            transition: all 150ms ease-in-out
+
+            @media (max-width: 991px)
+                margin: 10px
+
+            &:hover
+                text-decoration: none
+                background: transparent
+                color: #2b374b
