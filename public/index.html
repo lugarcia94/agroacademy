@@ -29,25 +29,54 @@
         <div class="header__logo">
             <div class="mobile__only">
                 <img
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAHdElNRQfkBAYPDQAvGDNYAAABW0lEQVRIx9XVvWqUQRQG4OcbIhgvIEXEtcnG7Uxl5UazFyAK3oMgWoTUCSFgYbAV78IgEojBxiAi+fEG1kILo5gsy66gEUzGIh+D5QwGou8wxXvgzPl7D8N/jwpc1DdMtnOaRjJ8ez4cO++IDj2qzXN+iplnW4PVRG/jiqNs9yh6HrRTSm1crYvKxXTQTaSL94U97HLNQBS9cRbBSkEBA+0K4zr6XvhVz2XGlDMZ0b9Y9/lvZfAPoBLcc1PPsi0waV4ra5hDKx6zVHf0hxbG7BUJaZHdRB7gTpF7tBv+SCnWtwRHLNZvfXcJY74WZbBQCe66peehHdA0ryVkRB946skpi+AkUOG8jr61tEwdlzOX6aVPXDcURW+NInhWtM7TvEv0Pm4UCmk7mEgpTdS3BM1gI5ENvC7U4isatkSHlmvTrIPsAjZdOF7bhr5v6dVRk1kfy76PJ6CD08dvSzEkyHLyYcIAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjAtMDQtMDZUMTU6MTM6MDArMDA6MDAc/DRSAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIwLTA0LTA2VDE1OjEzOjAwKzAwOjAwbaGM7gAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAASUVORK5CYII=" />
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAmVBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjHWqVAAAAMnRSTlMAAQcIDRITFBU6Ozw9P0BEZGVnaGlqbH1/gZudnp+gqsHCyMnT1NXd5e/w8fX4+fr8/TEAoucAAACXSURBVHgBzdNJYoJAFITh6kAg0EQcRBEUZMBBUbDufzhP8B5bvnUt/wKiqqegrywQfagYLSqqGjypeqGl6ootVWuYdKBo2BsAf4tY8O9jJpxVVgqypQP4Fyo6D0eqTrhR9Zga3JFTlcPrqGh/AWdXlIIi+cFMuGEsCF0A5qAllxokVG2ms588zpmqGnakYgwA2wwUvOsAX4RXgLGG6lWCAAAAAElFTkSuQmCC" />
             </div>
             <a href="/"><img src="../img/logo.png" /></a>
             <a href="/" class="blog">Blog</a>
         </div>
         <div class="mobile__menu">
             <div class="close">X</div>
-            <a href="/"><img src="../img/logo.png" /></a>
             <div class="header__search">
                 <form action="" name="search">
-                    <label>Cursos<img src="../img/down.png" /></label>
 
-                    <input type="search" placeholder="Buscar" />
-                    <input type="submit" />
+                    <div class="menu__content">
+                        <label>Cursos<img src="../img/down.png" /></label>
+                        <div class="menu__horizontal">
+                            <ul>
+                                <li class="sub_title"><a href="#">Conteúdo de parceiros</a></li>
+                                <li><a href="#">Curso - FalkerMap</a></li>
+                                <li><a href="#">Curso - Pulverizador Condor Jacto</a></li>
+                                <li><a href="#">Curso - Uniport 3030 Jacto</a></li>
+                            </ul>
+                            <ul>
+                                <li class="sub_title"><a href="#">Mecanização Agrícola</a></li>
+                                <li><a href="#">Curso de pulverização agrícola</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="search__input">
+                        <input type="search" placeholder="Buscar" />
+                        <input type="submit" />
+                    </div>
                 </form>
             </div>
             <div class="header__links">
                 <a href="#" id="register">Cadastre-se</a>
                 <a href="#" class="active" id="login">Entrar</a>
+            </div>
+            <div class="mobile__only">
+                <div class="menu__horizontal">
+                    <ul>
+                        <li class="sub_title">Conteúdo de parceiros <img src="../img/down.png" /></li>
+                        <li><a href="#">Curso - FalkerMap</a></li>
+                        <li><a href="#">Curso - Pulverizador Condor Jacto</a></li>
+                        <li><a href="#">Curso - Uniport 3030 Jacto</a></li>
+                    </ul>
+                    <ul>
+                        <li class="sub_title">Mecanização Agrícola<img src="../img/down.png" /></li>
+                        <li><a href="#">Curso de pulverização agrícola</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
 
@@ -79,7 +108,7 @@
             </div>
             <div class="content__full-right" data-aos="fade-left"><img src="../img/full.png" /></div>
             <img src="../img/curv.png" class="curv" />
-            <a href="#about">
+            <a href="#about" class="down__arrow">
                 <img src="../img/seta.png" class="seta">
             </a>
         </div>
@@ -126,7 +155,7 @@
                 </form>
 
             </div>
-            <a href="#student">
+            <a href="#student" class="down__arrow">
                 <img src="../img/seta.png" class="seta">
             </a>
         </div>
@@ -149,7 +178,7 @@
             </div>
         </div>
         <img src="../img/yellow.png" class="left__float" />
-        <a href="#teacher">
+        <a href="#teacher" class="down__arrow">
             <img src="../img/seta.png" class="seta">
         </a>
     </section>
@@ -175,7 +204,7 @@
                 <a href="/">Professores, comecem aqui</a>
             </div>
         </div>
-        <a href="#company">
+        <a href="#company" class="down__arrow">
             <img src="../img/seta.png" class="seta">
         </a>
         <img src="../img/greentwo.png" class="left__float" />
@@ -208,7 +237,7 @@
             </ul>
         </div>
 
-        <a href="#footer">
+        <a href="#footer" class="down__arrow">
             <img src="../img/seta.png" class="seta">
         </a>
         <img src="../img/blue.png" class="left__float" />

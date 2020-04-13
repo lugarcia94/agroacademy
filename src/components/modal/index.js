@@ -62,3 +62,7 @@ $('#register').on('click', function () {
 $('.register__popup-close').on('click', function () {
     $('body').removeClass('on__register')
 })
+
+$('.sub_title').on('click', function () {
+    $(this).parent().toggleClass('on__menu-mobile')
+})

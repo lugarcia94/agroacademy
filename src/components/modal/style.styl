@@ -18,10 +18,12 @@ body
     padding-top: 30px
     background: #e4e5e2
     box-shadow: 450px 0 #e4e5e2, -450px 0 #e4e5e2
+    position: relative
 
     @media (max-width: 991px)
         box-shadow: none
         flex-wrap: wrap
+        padding: 15px
 
     *
         z-index: 9
@@ -40,7 +42,7 @@ body
             max-width: 230px
 
             @media (max-width: 991px)
-                margin: 0 10px
+                margin: 0 30px
 
         .blog
             color: #000
@@ -64,8 +66,62 @@ body
                 color: #fff
 
     &__search
-        form
+        .menu__content
+            min-height: 43px
+            line-height: 43px
+
+            .menu__horizontal
+                position: absolute
+                top: 99%
+                background: #ffffffa1
+                width: 100%
+                left: 0
+                box-shadow: 1330px 0 #ffffffa1, -1330px 0 #ffffffa1 !important
+                display: flex
+                justify-content: center
+                padding: 40px 0
+                min-height: 300px
+                display: none
+
+                &:hover
+                    display: flex
+
+                ul
+                    margin: 0 50px
+
+                    li.sub_title
+                        line-height: 25px
+
+                        a
+                            font-size: 19px
+                            color: #000
+                            font-weight: 700
+                            display: block
+                            margin-bottom: 10px
+                            line-height: 21px
+
+                    li
+                        line-height: 20px
+
+                        a
+                            font-size: 15px
+                            color: #000
+                            font-weight: 500
+                            line-height: 17px
+
+            &:hover
+                .menu__horizontal
+                    display: flex
+
+        .search__input
             position: relative
+
+            @media (max-width: 991px)
+                width: 100%
+
+        form
+            display: flex
+            align-items: center
 
         label
             font-weight: 700
@@ -147,7 +203,6 @@ body
                     display: none
 
         &-right
-            z-index: 999
             width: 50%
 
             @media (max-width: 991px)
@@ -162,8 +217,8 @@ body
                 max-width: 430px
                 left: 15%
 
-            @media (max-width: 991px)
-                display: none
+                @media (max-width: 991px)
+                    display: none
 
             @media (max-width: 991px)
                 z-index: 99999
@@ -220,7 +275,7 @@ body
                     flex-wrap: wrap
 
                 li
-                    a
+                    a:not(.down__arrow)
                         background: #00b9d8
                         color: #fff
                         font-size: 15px
@@ -460,7 +515,7 @@ body
             font-size: 20px
             margin: 30px 0
 
-        a
+        a:not(.down__arrow)
             background: #78c565
             width: 280px
             line-height: 50px
@@ -548,7 +603,7 @@ body
             font-size: 20px
             margin: 30px 0
 
-        a
+        a:not(.down__arrow)
             background: #fcd53e
             width: 280px
             line-height: 50px
@@ -631,7 +686,7 @@ body
             font-size: 20px
             margin: 30px 0
 
-        a
+        a:not(.down__arrow)
             background: #12b8dc
             width: 280px
             line-height: 50px
@@ -838,7 +893,7 @@ body
         top: 0
         left: 0
         z-index: 9999999
-        padding: 30px 15px
+        padding: 15px
         left: -100%
         transition: all 0.3s ease-in-out
         visibility: hidden
@@ -850,12 +905,13 @@ body
             position: absolute
             color: #000
             font-weight: 700
-            right: 5px
+            right: -40px
             top: 5px
             width: 30px
             height: 30px
             border-radius: 50%
-            border: 1px solid #000
+            background: #fff
+            border: 1px solid #fff
 
         .header__search
             label
@@ -872,12 +928,42 @@ body
         .header__search
             margin-bottom: 20px
 
+        .menu__horizontal
+            ul
+                .sub_title
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    min-height: 30px
+                    color: #000
+                    font-weight: 600
+
+                    img
+                        width: 15px
+                        transition: all 200ms ease-in-out
+
+                li
+                    display: none
+
+                    a
+                        color: #000
+
         .header__links
             max-width: 100%
             justify-content: space-between
+            flex-wrap: wrap
 
             a
-                width: 50%
+                width: 100%
+                border: none !important
+                text-align: left !important
+                margin: 0 !important
+                font-weight: 600
+                min-height: 30px
+
+                &:hover
+                    background: none !important
+                    color: #000
 
 .on__menu
     .mobile__menu
@@ -1175,3 +1261,22 @@ ul.content__company-list
         @media (max-width: 767px)
             flex: 0 0 27%
             margin: 10px 0
+
+.menu__horizontal
+    .on__menu-mobile
+        li
+            display: flex !important
+
+            img
+                transform: rotate(180deg)
+
+body.on__menu:before
+    content: ''
+    background: #0000008a
+    position: fixed
+    width: 100%
+    height: 100%
+    display: block
+    top: 0
+    left: 0
+    z-index: 2222222
