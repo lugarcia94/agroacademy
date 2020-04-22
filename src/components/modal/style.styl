@@ -74,10 +74,10 @@ body
             .menu__horizontal
                 position: absolute
                 top: 99%
-                background: #ffffffa1
+                background: #fff
                 width: 100%
                 left: 0
-                box-shadow: 1330px 0 #ffffffa1, -1330px 0 #ffffffa1 !important
+                box-shadow: 1330px 0 #fff, -1330px 0 #fff !important
                 display: flex
                 justify-content: center
                 padding: 40px 0
@@ -217,6 +217,8 @@ body
                     z-index: 9999
 
         &-left
+            z-index: 3
+
             .content__full-links
                 @media (max-width: 991px)
                     display: none
@@ -356,6 +358,9 @@ body
             margin: 30px auto
             position: relative
 
+            @media (max-width: 767px)
+                padding: 20px 15px
+
             input
                 width: 100%
                 height: 40px
@@ -367,7 +372,7 @@ body
                 font-size: 15px
 
                 @media (max-width: 991px)
-                    font-size: 13px
+                    font-size: 11px
 
             input[type=submit]
                 position: absolute
@@ -835,8 +840,9 @@ body
 .navigator
     display: flex
     flex-wrap: wrap
+    justify-content: flex-end
     position: fixed
-    right: 30px
+    right: 10px
     max-width: 50px
     top: 50%
     transform: translateY(-50%)
@@ -1157,7 +1163,7 @@ a.down__arrow
 
         @media (max-width: 991px)
             width: 100%
-            padding: 120px 15px
+            padding: 15px
 
         >h2
             font-size: 30px
