@@ -111,6 +111,10 @@ body
                             line-height: 17px
 
             &:hover
+                label
+                    img
+                        transform: rotate(180deg)
+
                 .menu__horizontal
                     display: flex
 
@@ -132,6 +136,7 @@ body
             img
                 max-width: 10px
                 margin-left: 5px
+                transition: all 150ms ease-in-out
 
         input[type=search]
             border-radius: 25px
@@ -464,9 +469,13 @@ body
         &-right
             width: 50%
 
+            @media (max-width: 1370px)
+                padding-right: 35px
+
             @media (max-width: 991px)
                 width: 100%
                 text-align: center
+                padding-right: 0
 
         h2
             font-size: 26px
@@ -624,6 +633,7 @@ body
             min-height: 100vh
             align-items: center
             flex-wrap: wrap
+            padding-bottom: 50px
 
         &-left
             width: 50%
@@ -641,9 +651,13 @@ body
         &-right
             width: 50%
 
+            @media (max-width: 1370px)
+                padding-right: 35px
+
             @media (max-width: 991px)
                 width: 100%
                 text-align: center
+                padding-right: 0
 
         h2
             font-size: 26px
@@ -1157,7 +1171,7 @@ a.down__arrow
     &-right
         width: 50%
         background: #00b9d8
-        padding: 120px 70px
+        padding: 50px
         border-top-right-radius: 7px
         border-bottom-right-radius: 7px
 
@@ -1181,7 +1195,7 @@ a.down__arrow
             margin-bottom: 30px
 
         form
-            max-width: 340px
+            max-width: 100%
             margin: 0 auto
 
             @media (max-width: 991px)
@@ -1238,37 +1252,31 @@ a.down__arrow
 
     &-left
         width: 50%
-        padding: 150px 60px
+        padding: 15px
         position: relative
+        text-align: center
 
         @media (max-width: 991px)
             display: none
 
         span
-            margin-top: 300px
             display: block
             color: #595959
             font-size: 15px
             margin-bottom: 30px
 
         .register__top
-            position: absolute
             max-width: 490px
-            top: 0
-            left: -60px
 
             @media (max-width: 1200px)
                 max-width: 420px
-                top: 50px
-                left: 50%
-                transform: translateX(-50%)
-                top: 50px
 
         .register__bottom
             position: absolute
             max-width: 360px
             left: -250px
             bottom: 0
+            z-index: -1
 
 .on__register
     .register__popup
