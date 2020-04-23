@@ -1,11 +1,11 @@
-const path                    = require('path');
-const htmlWebpackPlugin       = require('html-webpack-plugin');
-const miniCssExtractPlugin    = require("mini-css-extract-plugin");
-const iconfontWebpackPlugin   = require('iconfont-webpack-plugin');
+const path = require('path');
+const htmlWebpackPlugin = require('html-webpack-plugin');
+const miniCssExtractPlugin = require("mini-css-extract-plugin");
+const iconfontWebpackPlugin = require('iconfont-webpack-plugin');
 
-const mode                    = process.env.WEBPACK_MODE;
+const mode = process.env.WEBPACK_MODE;
 
-const config                  = {};
+const config = {};
 
 config.entry = {
     theme: './src'

@@ -66,3 +66,23 @@ $('.register__popup-close').on('click', function () {
 $('.sub_title').on('click', function () {
     $(this).parent().toggleClass('on__menu-mobile')
 })
+
+
+$('ul.nav__pages-menu li').on('click', function () {
+    $('ul.nav__pages-menu li').removeClass('active__tab')
+    $(this).addClass('active__tab')
+    var className = $(this).attr('class').split(" ");
+    $('div.sobre').removeClass('active__tab')
+    $('div.lideres').removeClass('active__tab')
+    $('div.nossos').removeClass('active__tab')
+    $('div.contato').removeClass('active__tab')
+    $('div.sobre').hide()
+    $('div.lideres').hide()
+    $('div.nossos').hide()
+    $('div.contato').hide()
+    $('body').find('div.' + className[0]).addClass('active__tab')
+
+    var nameItem = $(this).html()
+
+    $('.topo__page h2').html(nameItem)
+})
