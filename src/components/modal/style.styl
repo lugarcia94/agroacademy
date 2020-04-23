@@ -1619,3 +1619,131 @@ body.on__menu:before
 
     .active__tab
         display: block !important
+
+.alunos
+    .header
+        background: #e0e4e6
+        box-shadow: 450px 0 #e0e4e6, -450px 0 #e0e4e6
+
+    .full__aluno
+        background: #e0e4e6
+
+        .wrapper
+            display: flex
+            align-items: center
+
+            > div
+                max-width: 740px
+
+                @media (max-width: 991px)
+                    max-width: 100%
+                    padding: 15px 0
+
+            > img
+                max-width: 360px
+
+                @media (max-width: 991px)
+                    display: none
+
+        h2
+            color: #000
+            font-size: 32px
+            font-weight: 700
+            margin-bottom: 30px
+
+            @media (max-width: 991px)
+                text-align: center
+
+        p
+            font-size: 20px
+
+            @media (max-width: 991px)
+                text-align: center
+
+    .list__cursos
+        margin: 80px 0
+
+    .list__cursos-content
+        display: flex
+        max-width: 990px
+        margin: 15px auto
+
+        @media (max-width: 520px)
+            flex-wrap: wrap
+
+    .list__content
+        display: flex
+        align-items: center
+
+        &-thumb
+            background: #fff
+            max-width: 75px
+            border-radius: 50%
+
+            @media (max-width: 520px)
+                margin-right: 10px
+
+        &-links
+            max-width: 130px
+
+            span
+                color: #fff
+                display: block
+                font-size: 20px
+                font-weight: 700
+
+            a
+                font-size: 10px
+                font-weight: 700
+                text-transform: uppercase
+                text-decoration: underline
+                color: #fff
+
+        &-left
+            display: flex
+            align-items: center
+            max-width: 250px
+            width: 100%
+            padding: 15px
+            border-top-left-radius: 10px
+            border-bottom-left-radius: 10px
+            justify-content: space-between
+
+            @media (max-width: 520px)
+                max-width: 100%
+                border-radius: 10px
+                justify-content: center
+
+        &-right
+            margin-left: 10px
+            border-top-right-radius: 10px
+            border-bottom-right-radius: 10px
+            border: 1px solid #ccc
+            max-width: 700px
+            width: 100%
+            padding: 15px
+
+            @media (max-width: 520px)
+                max-width: 100%
+                margin: 0
+                border-radius: 10px
+                margin-top: 10px
+
+            ul
+                li
+                    a
+                        color: #000
+                        font-weight: 600
+                        font-size: 12px
+
+    .orange__border
+        border-left: 2px solid #ec6508
+
+    .orange
+        background: #ec6508
+
+    .green__bg
+        background: #3ab95f
+
+    .green__border
+        border-left: 2px solid #3ab95f
