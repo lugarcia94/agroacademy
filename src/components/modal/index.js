@@ -86,3 +86,12 @@ $('ul.nav__pages-menu li').on('click', function () {
 
     $('.topo__page h2').html(nameItem)
 })
+
+$('.menu__content label').click(function (event) {
+    $('body').addClass('on__block-menu')
+})
+
+$('.close__menu-horizontal').click(function (event) {
+    $('body').removeClass('on__block-menu')
+})
+
