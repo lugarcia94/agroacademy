@@ -83,6 +83,8 @@ body
                 padding: 40px 0
                 min-height: 300px
                 display: none
+                flex-wrap: wrap
+                justify-content: space-between
 
                 &:hover
                     display: flex
@@ -1965,3 +1967,551 @@ body.on__menu:before
 
 .professores .topo__page
     background: #78c564
+
+.aluno__logged
+    .header__links
+        max-width: 300px
+
+        img
+            max-width: 10px
+            margin-left: 5px
+
+.second__header
+    display: flex
+    align-items: center
+    background: #e4e5e2
+
+    @media (max-width: 991px)
+        flex-wrap: wrap
+        padding-bottom: 10px
+
+    span
+        padding-left: 30px
+        font-size: 30px
+        color: #3fb3be
+        font-weight: 700
+        width: 15%
+
+        @media (max-width: 991px)
+            width: 100%
+            text-align: center
+            margin-bottom: 10px
+
+    &-bg
+        margin-left: 30px
+        background: #3fb3be
+        width: 85%
+        height: 115px
+        border-top-left-radius: 100px
+        border-bottom-left-radius: 100px
+        display: flex
+        align-items: center
+        justify-content: center
+
+        @media (max-width: 991px)
+            width: 100%
+
+        a
+            font-size: 16px
+            font-weight: 600
+            color: #fff
+            border-radius: 25px
+            border: 1px solid #fff
+            width: 200px
+            height: 40px
+            line-height: 40px
+            text-align: center
+            transition: all 150ms ease-in-out
+
+            &:hover
+                color: #3fb3be
+                background: #fff
+                text-decoration: none
+
+.cursos__list
+    margin: 60px 0
+
+    .wrapper
+        max-width: 1100px
+        padding-left: 80px
+        border-left: 1px solid #8f908f
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+
+        @media (max-width: 991px)
+            padding-left: 15px
+
+    ul
+        display: flex
+        flex-wrap: wrap
+        width: 45%
+        position: relative
+        margin-bottom: 50px
+
+        @media (max-width: 991px)
+            width: 100%
+
+        .seeall
+            justify-content: flex-start
+
+            a
+                font-size: 13px
+                font-weight: 600
+                color: #fff
+                border-radius: 25px
+                border: 2px solid #3fb3be
+                background: #3fb3be
+                width: 100px
+                height: 35px
+                text-align: center
+                transition: all 150ms ease-in-out
+                position: relative
+                display: flex
+                align-items: center
+                justify-content: center
+
+                &:hover
+                    color: #3fb3be
+                    background: #fff
+                    text-decoration: none
+
+        li
+            width: 100%
+            display: flex
+            align-items: center
+            margin-bottom: 10px
+            position: relative
+
+            &:before
+                content: ''
+                height: 10px
+                background: #ccc
+
+            &:nth-last-child(-n+2)
+                .cursos__item
+                    &-left
+                        &:before
+                            display: none !important
+
+            .cursos__item
+                &-left
+                    max-width: 60px
+                    width: 100%
+                    display: flex
+                    align-items: center
+                    height: 60px
+                    margin-right: 10px
+                    position: relative
+
+                    &:before
+                        content: ''
+                        height: 10px
+                        background: #ccc
+                        width: 2px
+                        position: absolute
+                        top: 100%
+                        left: 50%
+
+                    img
+                        max-width: 50px
+                        position: absolute
+                        left: 50%
+                        transform: translate(-50%, -50%)
+                        top: 50%
+                        border: 3px solid #fff
+                        border-radius: 50%
+
+                &-name
+                    color: #5E5E5E
+                    font-size: 13px
+                    font-weight: 600
+
+                &-finish
+                    color: #5E5E5E
+                    font-size: 10px
+                    margin-top: 5px
+
+            > span
+                color: #5E5E5E
+                font-size: 16px
+                font-weight: 600
+                border-bottom: 1px solid #8f908f
+                padding-bottom: 10px
+                margin-bottom: 15px
+
+            > a
+                font-size: 14px
+                font-weight: 600
+                color: #5E5E5E
+                border-radius: 25px
+                border: 2px solid #3fb3be
+                width: 100px
+                height: 35px
+                text-align: center
+                transition: all 150ms ease-in-out
+                position: absolute
+                right: 0
+                top: 50%
+                transform: translateY(-50%)
+                display: flex
+                align-items: center
+                justify-content: center
+
+                &:hover
+                    color: #fff
+                    background: #3fb3be
+                    text-decoration: none
+
+.progress-circle
+    background-color: #ddd
+    border-radius: 50%
+    display: inline-block
+    height: 60px
+    position: relative
+    width: 60px
+
+.progress-circle:before
+    -webkit-box-align: center
+    align-items: center
+    background-color: #fff
+    border-radius: 50%
+    content: attr(data-progress) '%'
+    display: -webkit-box
+    display: flex
+    font-size: 0
+    -webkit-box-pack: center
+    justify-content: center
+    position: absolute
+    left: 1rem
+    right: 1rem
+    top: 1rem
+    bottom: 1rem
+    -webkit-transition: -webkit-transform 0.2s ease
+    transition: -webkit-transform 0.2s ease
+    transition: transform 0.2s ease
+    transition: transform 0.2s ease, -webkit-transform 0.2s ease
+
+.progress-circle:after
+    background-color: #ec6608
+    border-radius: 50%
+    content: ''
+    display: inline-block
+    height: 100%
+    width: 100%
+
+.progress-circle[data-progress='0']:after
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #ddd), color-stop(50%, transparent), to(transparent)), -webkit-gradient(linear, left top, right top, color-stop(50%, #ec6608), color-stop(50%, #ddd), to(#ddd))
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(90deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='1']:after
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(93.6deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='2']:after
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(97.2deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='3']:after
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(100.8deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='4']:after
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(104.4deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='5']:after
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(108deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='6']:after
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(111.6deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='7']:after
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(115.2deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='8']:after
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(118.8deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='9']:after
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(122.4deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='10']:after
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(126deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='11']:after
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(129.6deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='12']:after
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(133.2deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='13']:after
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(136.8deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='14']:after
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(140.4deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='15']:after
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(144deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='16']:after
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(147.6deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='17']:after
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(151.2deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='18']:after
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(154.8deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='19']:after
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(158.4deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='20']:after
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(162deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='21']:after
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(165.60000000000002deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='22']:after
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(169.2deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='23']:after
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(172.8deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='24']:after
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(176.4deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='25']:after
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #ddd), color-stop(50%, transparent), to(transparent)), -webkit-gradient(linear, left top, left bottom, color-stop(50%, #ec6608), color-stop(50%, #ddd), to(#ddd))
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(180deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='26']:after
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(183.60000000000002deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='27']:after
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(187.2deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='28']:after
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(190.8deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='29']:after
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(194.4deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='30']:after
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(198deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='31']:after
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(201.60000000000002deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='32']:after
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(205.2deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='33']:after
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(208.8deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='34']:after
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(212.4deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='35']:after
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(216deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='36']:after
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(219.6deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='37']:after
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(223.20000000000002deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='38']:after
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(226.8deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='39']:after
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(230.4deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='40']:after
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(234deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='41']:after
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(237.6deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='42']:after
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(241.20000000000002deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='43']:after
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(244.8deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='44']:after
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(248.4deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='45']:after
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(252deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='46']:after
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(255.6deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='47']:after
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(259.20000000000005deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='48']:after
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(262.8deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='49']:after
+    background-image: linear-gradient(90deg, #ddd 50%, transparent 50%, transparent), linear-gradient(266.4deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='50']:after
+    background-image: -webkit-gradient(linear, right top, left top, color-stop(50%, #ec6608), color-stop(50%, transparent), to(transparent)), -webkit-gradient(linear, right top, left top, color-stop(50%, #ec6608), color-stop(50%, #ddd), to(#ddd))
+    background-image: linear-gradient(-90deg, #ec6608 50%, transparent 50%, transparent), linear-gradient(270deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='51']:after
+    background-image: linear-gradient(-86.4deg, #ec6608 50%, transparent 50%, transparent), linear-gradient(270deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='52']:after
+    background-image: linear-gradient(-82.8deg, #ec6608 50%, transparent 50%, transparent), linear-gradient(270deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='53']:after
+    background-image: linear-gradient(-79.2deg, #ec6608 50%, transparent 50%, transparent), linear-gradient(270deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='54']:after
+    background-image: linear-gradient(-75.6deg, #ec6608 50%, transparent 50%, transparent), linear-gradient(270deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='55']:after
+    background-image: linear-gradient(-72deg, #ec6608 50%, transparent 50%, transparent), linear-gradient(270deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='56']:after
+    background-image: linear-gradient(-68.4deg, #ec6608 50%, transparent 50%, transparent), linear-gradient(270deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='57']:after
+    background-image: linear-gradient(-64.8deg, #ec6608 50%, transparent 50%, transparent), linear-gradient(270deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='58']:after
+    background-image: linear-gradient(-61.2deg, #ec6608 50%, transparent 50%, transparent), linear-gradient(270deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='59']:after
+    background-image: linear-gradient(-57.6deg, #ec6608 50%, transparent 50%, transparent), linear-gradient(270deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='60']:after
+    background-image: linear-gradient(-54deg, #ec6608 50%, transparent 50%, transparent), linear-gradient(270deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='61']:after
+    background-image: linear-gradient(-50.4deg, #ec6608 50%, transparent 50%, transparent), linear-gradient(270deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='62']:after
+    background-image: linear-gradient(-46.8deg, #ec6608 50%, transparent 50%, transparent), linear-gradient(270deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='63']:after
+    background-image: linear-gradient(-43.199999999999996deg, #ec6608 50%, transparent 50%, transparent), linear-gradient(270deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='64']:after
+    background-image: linear-gradient(-39.6deg, #ec6608 50%, transparent 50%, transparent), linear-gradient(270deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='65']:after
+    background-image: linear-gradient(-36deg, #ec6608 50%, transparent 50%, transparent), linear-gradient(270deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='66']:after
+    background-image: linear-gradient(-32.4deg, #ec6608 50%, transparent 50%, transparent), linear-gradient(270deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='67']:after
+    background-image: linear-gradient(-28.799999999999997deg, #ec6608 50%, transparent 50%, transparent), linear-gradient(270deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='68']:after
+    background-image: linear-gradient(-25.200000000000003deg, #ec6608 50%, transparent 50%, transparent), linear-gradient(270deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='69']:after
+    background-image: linear-gradient(-21.599999999999994deg, #ec6608 50%, transparent 50%, transparent), linear-gradient(270deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='70']:after
+    background-image: linear-gradient(-18deg, #ec6608 50%, transparent 50%, transparent), linear-gradient(270deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='71']:after
+    background-image: linear-gradient(-14.399999999999991deg, #ec6608 50%, transparent 50%, transparent), linear-gradient(270deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='72']:after
+    background-image: linear-gradient(-10.799999999999997deg, #ec6608 50%, transparent 50%, transparent), linear-gradient(270deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='73']:after
+    background-image: linear-gradient(-7.200000000000003deg, #ec6608 50%, transparent 50%, transparent), linear-gradient(270deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='74']:after
+    background-image: linear-gradient(-3.599999999999994deg, #ec6608 50%, transparent 50%, transparent), linear-gradient(270deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='75']:after
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #ec6608), color-stop(50%, transparent), to(transparent)), -webkit-gradient(linear, right top, left top, color-stop(50%, #ec6608), color-stop(50%, #ddd), to(#ddd))
+    background-image: linear-gradient(0deg, #ec6608 50%, transparent 50%, transparent), linear-gradient(270deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='76']:after
+    background-image: linear-gradient(3.600000000000009deg, #ec6608 50%, transparent 50%, transparent), linear-gradient(270deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='77']:after
+    background-image: linear-gradient(7.200000000000003deg, #ec6608 50%, transparent 50%, transparent), linear-gradient(270deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='78']:after
+    background-image: linear-gradient(10.799999999999997deg, #ec6608 50%, transparent 50%, transparent), linear-gradient(270deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='79']:after
+    background-image: linear-gradient(14.400000000000006deg, #ec6608 50%, transparent 50%, transparent), linear-gradient(270deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='80']:after
+    background-image: linear-gradient(18deg, #ec6608 50%, transparent 50%, transparent), linear-gradient(270deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='81']:after
+    background-image: linear-gradient(21.60000000000001deg, #ec6608 50%, transparent 50%, transparent), linear-gradient(270deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='82']:after
+    background-image: linear-gradient(25.200000000000003deg, #ec6608 50%, transparent 50%, transparent), linear-gradient(270deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='83']:after
+    background-image: linear-gradient(28.799999999999997deg, #ec6608 50%, transparent 50%, transparent), linear-gradient(270deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='84']:after
+    background-image: linear-gradient(32.400000000000006deg, #ec6608 50%, transparent 50%, transparent), linear-gradient(270deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='85']:after
+    background-image: linear-gradient(36deg, #ec6608 50%, transparent 50%, transparent), linear-gradient(270deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='86']:after
+    background-image: linear-gradient(39.599999999999994deg, #ec6608 50%, transparent 50%, transparent), linear-gradient(270deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='87']:after
+    background-image: linear-gradient(43.20000000000002deg, #ec6608 50%, transparent 50%, transparent), linear-gradient(270deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='88']:after
+    background-image: linear-gradient(46.80000000000001deg, #ec6608 50%, transparent 50%, transparent), linear-gradient(270deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='89']:after
+    background-image: linear-gradient(50.400000000000006deg, #ec6608 50%, transparent 50%, transparent), linear-gradient(270deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='90']:after
+    background-image: linear-gradient(54deg, #ec6608 50%, transparent 50%, transparent), linear-gradient(270deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='91']:after
+    background-image: linear-gradient(57.599999999999994deg, #ec6608 50%, transparent 50%, transparent), linear-gradient(270deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='92']:after
+    background-image: linear-gradient(61.20000000000002deg, #ec6608 50%, transparent 50%, transparent), linear-gradient(270deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='93']:after
+    background-image: linear-gradient(64.80000000000001deg, #ec6608 50%, transparent 50%, transparent), linear-gradient(270deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='94']:after
+    background-image: linear-gradient(68.4deg, #ec6608 50%, transparent 50%, transparent), linear-gradient(270deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='95']:after
+    background-image: linear-gradient(72deg, #ec6608 50%, transparent 50%, transparent), linear-gradient(270deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='96']:after
+    background-image: linear-gradient(75.6deg, #ec6608 50%, transparent 50%, transparent), linear-gradient(270deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='97']:after
+    background-image: linear-gradient(79.20000000000002deg, #ec6608 50%, transparent 50%, transparent), linear-gradient(270deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='98']:after
+    background-image: linear-gradient(82.80000000000001deg, #ec6608 50%, transparent 50%, transparent), linear-gradient(270deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='99']:after
+    background-image: linear-gradient(86.4deg, #ec6608 50%, transparent 50%, transparent), linear-gradient(270deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.progress-circle[data-progress='100']:after
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #ec6608), color-stop(50%, transparent), to(transparent)), -webkit-gradient(linear, right top, left top, color-stop(50%, #ec6608), color-stop(50%, #ddd), to(#ddd))
+    background-image: linear-gradient(90deg, #ec6608 50%, transparent 50%, transparent), linear-gradient(270deg, #ec6608 50%, #ddd 50%, #ddd)
+
+.addcursos
+    width: 100%
+    display: block
+    text-align: center
+
+    img
+        max-width: 120px
