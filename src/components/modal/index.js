@@ -40,7 +40,7 @@ new ScrollMagic.Scene({ triggerElement: "#footer" })
 AOS.init();
 
 
-$('.mobile__only').on('click', function () {
+$('.mobile__only img').on('click', function () {
     $('body').addClass('on__menu')
 })
 $('.close').on('click', function () {
@@ -95,10 +95,15 @@ $('.close__menu-horizontal').click(function (event) {
     $('body').removeClass('on__block-menu')
 })
 
-$('#link_popup').click(function (event) {
+$('#link_popup').on('click', function () {
     $('body').addClass('on__pop-links')
 })
 
-$('.action__popup-close').click(function (event) {
+$('.action__popup-close').on('click', function () {
     $('body').removeClass('on__pop-links')
 })
+
+$('#link_popup-m').on('click', function () {
+    $('body').addClass('on__pop-links')
+})
+

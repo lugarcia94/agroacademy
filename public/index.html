@@ -18,12 +18,11 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-
     <link href="./theme.css" rel="stylesheet">
+
 </head>
 
-<body>
-    <img src="./img/green.png" class="green">
+<body class="pages">
 
     <header class="header" id="header">
 
@@ -82,192 +81,64 @@
             </div>
         </div>
 
-        <ul class="navigator">
-            <li data-id="full"><a href="#full"></a></li>
-            <li data-id="about"><a href="#about"></a></li>
-            <li data-id="student"><a href="#student"></a></li>
-            <li data-id="teacher"><a href="#teacher"></a></li>
-            <li data-id="company"><a href="#company"></a></li>
-            <li data-id="footer"><a href="#footer"></a></li>
-        </ul>
+
     </header>
 
-    <section class="content__full" id="full">
+    <div class="topo__page">
+        <h2>Empresas</h2>
+    </div>
 
-        <div class="wrapper">
+    <div class="contato contato__empresas">
+        <div class="contato__content">
+            <div class="wrapper">
+                <div class="contato__content__left">
+                    <form>
+                        <label>
+                            <h2>VAMOS CONVERSAR?</h2>
+                        </label>
+                        <label>Complete o formulário abaixo e um de nossos consultores entrará em contato com
+                            você</label>
 
-            <div class="content__full-left" data-aos="fade-right">
-                <img src="./img/familia.png" class="family" />
-                <span>Trazemos inovação ao <strong>aprendizado!</strong></span>
-                <p>Você vai estudar, praticar e aprender em uma comunidade que produz, discute e compartilha
-                    conhecimento.
-                </p>
-
-                <ul class="content__full-links">
-                    <li><a id="link_popup">Comece agora!</a></li>
-                    <li><a href="/">Assista o vídeo!</a></li>
-                </ul>
-            </div>
-            <div class="content__full-right" data-aos="fade-left">
-                <img src="./img/full.png" />
-                <div class="mobile__only">
-                    <ul class="content__full-links">
-                        <li><a id="link_popup">Comece agora!</a></li>
-                        <li><a href="/">Assista o vídeo!</a></li>
-                    </ul>
-                </div>
-            </div>
-            <img src="./img/curv.png" class="curv" />
-            <a href="#about" class="down__arrow">
-                <img src="./img/seta.png" class="seta">
-            </a>
-        </div>
-    </section>
-
-    <section class="content__about" id="about">
-        <img src="./img/blue.png" class="right__float" />
-        <div class="wrapper" data-aos="zoom-in-up">
-            <h2>Por que a Agro Academy <strong>funciona?</strong></h2>
-
-            <ul class="content__about-list">
-                <li>
-                    <img src="./img/c1.png" />
-                    <span>Aprendizagem personalizada</span>
-                    <p>Os alunos praticam no próprio ritmo, solucionando primeiramente suas dificuldades de compreensão
-                        e,
-                        depois, acelerando o aprendizado. </p>
-                </li>
-
-                <li>
-                    <img src="./img/c2.png" />
-                    <span>Conteúdo confiável</span>
-                    <p>Criada por especialistas e empresas, a plataforma da Agro Academy disponibiliza artigos e
-                        videoaulas
-                        confiáveis que abrangem adubação, pulverização e colheita.</p>
-                </li>
-
-                <li>
-                    <img src="./img/c3.png" />
-                    <span>Artigos e videoaulas para ajudar os professores</span>
-                    <p>Com a Agro Academy, os professores mesmo estando sem máquinas conseguem ensinar seus alunos sobre
-                        agricultura, gestão, mecanização e agricultura de precisão.</p>
-                </li>
-            </ul>
-
-        </div>
-        <div class="content__newsletter">
-            <div class="wrapper" data-aos="zoom-in-up">
-                <h2>Tire suas dúvidas com um de nossos <strong>especialistas</strong></h2>
-                <form name="" action="">
-                    <input type="text" name="name" placeholder="Pergunta: Como eu calibro meu pulverizador?" />
-                    <input type="text" name="email" placeholder="E-mail: joao@email.com.br" />
-                    <input type="submit" />
-                </form>
-
-            </div>
-            <a href="#student" class="down__arrow">
-                <img src="./img/seta.png" class="seta">
-            </a>
-        </div>
-        <img src="./img/blue.png" class="left__float" />
-    </section>
-
-
-
-    <section class="content__student" id="student">
-        <img src="./img/yellow.png" class="right__float" />
-        <div class="wrapper">
-            <div class="content__student-left" data-aos="fade-right"><img src="./img/student.png" /></div>
-            <div class="content__student-right" data-aos="fade-left">
-                <h2>Alunos <strong>estude para avançar</strong></h2>
-                <h3>Ainda não é aluno da Agro Academy?</h3>
-                <p>Desenvolva um aprendizado sólido e profundo em agricultura, gestão, mecanização, agricultura de
-                    precisãoe
-                    muito mais.</p>
-                <a href="/">Alunos, comecem aqui</a>
-            </div>
-        </div>
-        <img src="./img/yellow.png" class="left__float" />
-        <a href="#teacher" class="down__arrow">
-            <img src="./img/seta.png" class="seta">
-        </a>
-    </section>
-
-    <section class="content__teacher" id="teacher">
-        <img src="./img/greentwo.png" class="right__float" />
-        <div class="wrapper">
-            <div class="content__teacher-left" data-aos="fade-right"><img src="./img/teacher.png" /></div>
-            <div class="content__teacher-right" data-aos="fade-left">
-                <h2>Professor, juntos podemos <strong>fazer a diferença</strong></h2>
-                <h3>Inove em sua sala de aula e facilite o aprendizado de cada aluno.</h3>
-                <p>Leve a plataforma de aprendizado de agricultura, gestão, mecanização, agricultura de precisão para a
-                    sua
-                    sala de aula.</p>
-
-                <div class="content__teacher-depoiment">
-                    <strong>“Estou muito feliz, pois agora consigo me manter atualizado sobre as novas tecnologias. Com
-                        isso, me sinto mais preparado e confiante para ensinar.”</strong>
-                    <span>Gibson neres</span>
-                    <p>Instrutor senar - palmas/to</p>
+                        <input type="text" placeholder="Nome completo" />
+                        <input type="email" placeholder="Email" />
+                        <input type="text" placeholder="Celular com DDD" />
+                        <input type="text" placeholder="Website instituição" />
+                        <select name="select">
+                            <option value="valor1">Seu cargo na empresa</option>
+                        </select>
+                        <input type="button" value="Enviar" />
+                    </form>
                 </div>
 
-                <a href="/">Professores, comecem aqui</a>
+                <div class="contato__content__right">
+                    <h2>Que bom que você <b>decidiu</b> conhecer a <strong>Agro Academy!</strong></h2>
+                    <div class="frame__video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Qb-TYtjsPHo" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
             </div>
         </div>
-        <a href="#company" class="down__arrow">
-            <img src="./img/seta.png" class="seta">
-        </a>
-        <img src="./img/greentwo.png" class="left__float" />
-    </section>
 
-    <section class="content__company" id="company">
-        <img src="./img/blue.png" class="right__float" />
-        <div class="wrapper">
-            <div class="content__company-left" data-aos="fade-right"><img src="./img/company.png" /></div>
-            <div class="content__company-right" data-aos="fade-left">
-                <h2><strong>Empresas</strong></h2>
-                <h3>Ajude-nos a fazer mais</h3>
-                <p>
-                    Pedimos que a sua empresa ajude a apoiar a Agro Academy. Somos uma startup de tecnologia e educação
-                    para
-                    o agronegócio que conta com o apoio de empresas como a sua. No momento estamos buscando parceiros
-                    que
-                    queiram criar uma estratégia de criação e distribuição de conteúdo que ajude pessoas em todo o
-                    mundo. Se
-                    a sua empresa tiver interesse em se junta à Agro Academy entre em contato.
-                </p>
-                <a href="/">Empresas, comecem aqui</a>
-            </div>
-            <ul class="content__company-list">
-                <li class="content__company-item"><img src="./img/partner1.png" /></li>
-                <li class="content__company-item"><img src="./img/partner2.png" /></li>
-                <li class="content__company-item"><img src="./img/partner3.png" /></li>
-                <li class="content__company-item"><img src="./img/partner4.png" /></li>
-                <li class="content__company-item"><img src="./img/partner5.png" /></li>
-            </ul>
-        </div>
-
-        <a href="#footer" class="down__arrow">
-            <img src="./img/seta.png" class="seta">
-        </a>
-        <img src="./img/blue.png" class="left__float" />
+    </div>
 
 
 
-    </section>
+
 
     <footer id="footer" class="footer">
         <div class="footer__content">
             <img src="./img/yellow.png" class="right__float" />
             <div class="wrapper">
-                <div class="footer__left" data-aos="fade-right">
+                <div class="footer__left">
                     <p>Nossa missão é fazer com que grandes especialistas e empresas do agronegócio possam levar
                         conteúdos
                         de alta qualidade até as mãos de cada trabalhador do campo.</p>
                     <strong>A Agro Academy é uma empresa de tecnologia e educação para o campo.</strong>
                     <strong>Crie a sua <a href="/">conta gratuita</a>. É rápido e fácil.</strong>
                 </div>
-                <div class="footer__right" data-aos="fade-left">
+                <div class="footer__right">
                     <ul class="footer__right-list">
                         <li><a href="#">Sobre</a></li>
                         <li><a href="#">Nossos líderes</a></li>
@@ -369,19 +240,6 @@
                         </label>
                         <input type="submit" value="Cadastrar">
                     </form>
-                </div>
-
-            </div>
-
-        </div>
-        <div class="action__popup">
-            <div class="action__popup-content">
-                <div class="action__popup-close"><img src="./img/closeb.png"></div>
-                <span>Deseja começar <strong>como?</strong></span>
-                <div class="action__popup-links">
-                    <a href="#">Aluno</a>
-                    <a href="#">Professor</a>
-                    <a href="#">Empresa</a>
                 </div>
             </div>
         </div>
