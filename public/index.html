@@ -18,11 +18,12 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <link href="./theme.css" rel="stylesheet">
 
+    <link href="./theme.css" rel="stylesheet">
 </head>
 
-<body class="pages">
+<body>
+    <img src="./img/green.png" class="green">
 
     <header class="header" id="header">
 
@@ -81,174 +82,192 @@
             </div>
         </div>
 
-
+        <ul class="navigator">
+            <li data-id="full"><a href="#full"></a></li>
+            <li data-id="about"><a href="#about"></a></li>
+            <li data-id="student"><a href="#student"></a></li>
+            <li data-id="teacher"><a href="#teacher"></a></li>
+            <li data-id="company"><a href="#company"></a></li>
+            <li data-id="footer"><a href="#footer"></a></li>
+        </ul>
     </header>
 
-    <div class="topo__page">
-        <h2>Sobre</h2>
-    </div>
-    <div class="nav__pages">
-        <ul class="nav__pages-menu">
-            <li class="sobre active__tab">Sobre</li>
-            <li class="lideres">Nossos Líderes</li>
-            <li class="nossos">Nossos Apoiadores</li>
-            <li class="contato">Contato</li>
-        </ul>
-    </div>
+    <section class="content__full" id="full">
 
-    <div class="contato" style="display: none">
-        <div class="contato__content">
-            <div class="wrapper">
-                <div class="contato__content__left">
-                    <form>
-                        <label>Como podemos te ajudar?</label>
-                        <select name="select">
-                            <option value="valor1">Assunto</option>
-                        </select>
-                        <input type="text" placeholder="Nome completo" />
-                        <input type="email" placeholder="Email" />
-                        <textarea placeholder="Mensagem"></textarea>
-                        <input type="button" value="Enviar" />
-                    </form>
-                </div>
+        <div class="wrapper">
 
-                <div class="contato__content__right">
-                    <h2>Agro Academy</h2>
-                    <p>Av. Shunji Nishimiura, 490 - Distrito Industrial,</p>
-                    <p>Pompeia - SP,</p>
-                    <p>17580-000</p>
-                    <p>contato@agroacademy.com.br</p>
-                    <p>+55 14 3535-0919</p>
-                    <p>+55 14 9 8194-2720</p>
+            <div class="content__full-left" data-aos="fade-right">
+                <img src="./img/familia.png" class="family" />
+                <span>Trazemos inovação ao <strong>aprendizado!</strong></span>
+                <p>Você vai estudar, praticar e aprender em uma comunidade que produz, discute e compartilha
+                    conhecimento.
+                </p>
+
+                <ul class="content__full-links">
+                    <li><a id="link_popup">Comece agora!</a></li>
+                    <li><a href="/">Assista o vídeo!</a></li>
+                </ul>
+            </div>
+            <div class="content__full-right" data-aos="fade-left">
+                <img src="./img/full.png" />
+                <div class="mobile__only">
+                    <ul class="content__full-links">
+                        <li><a id="link_popup">Comece agora!</a></li>
+                        <li><a href="/">Assista o vídeo!</a></li>
+                    </ul>
                 </div>
             </div>
+            <img src="./img/curv.png" class="curv" />
+            <a href="#about" class="down__arrow">
+                <img src="./img/seta.png" class="seta">
+            </a>
         </div>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3696.470672905734!2d-50.19671928449747!3d-22.108023215415106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94959dc45171b4d9%3A0x5c27881bfa06370d!2sAgro%20Academy%20Tecnologia%20e%20Educa%C3%A7%C3%A3o%20Para%20o%20Agroneg%C3%B3cio!5e0!3m2!1spt-BR!2sbr!4v1587651642884!5m2!1spt-BR!2sbr"
-            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-            tabindex="0"></iframe>
-    </div>
+    </section>
 
-    <div class="sobre active__tab">
-        <div class="wrapper">
-            <h2>Se há vontade de aprender, com certeza há espaço para ensinar. Foi dessa certeza que
-                nasceu a Agro Academy.</h2>
+    <section class="content__about" id="about">
+        <img src="./img/blue.png" class="right__float" />
+        <div class="wrapper" data-aos="zoom-in-up">
+            <h2>Por que a Agro Academy <strong>funciona?</strong></h2>
 
-            <p>Em 2018, inspirados pelos novos desafios e pelas mudanças de cenário no agronegó- cio, nós percebemos
-                que
-                era preciso criar uma maneira de conectar os trabalhadores e gestores do campo a conteúdos de alta
-                qualidade, que pudessem não só solucio- nar seus problemas, mas também proporcionar mais qualidade de
-                vida, produtivida- de e renda nas fazendas.</p>
-            <p>Nesse momento, notamos que quem queria ensinar não era capaz de alcançar aque- les que queriam aprender
-                -
-                por questões didáticas, tecnológicas e de infraestrutura - e isso representava não só um enorme
-                problema no desenvolvimento e eficiência do trabalho no campo, como também afetava a capacidade de o
-                trabalhador fazer o melhor com suas ferramentas, evoluir profissionalmente, aproveita oportunidades e
-                crescer no dia a dia.</p>
-            <p>Por isso, decidimos que era preciso conversar com as duas pontas, atendendo suas necessidades e desejos.
-                Com
-                essa finalidade, criamos uma plataforma completa, em que fabricantes e trabalhadores do agronegócio
-                podem
-                se conectar e evoluir juntos: a Agro Academy.</p>
-            <p>Na plataforma, as maiores marcas de equipamentos agrícolas do país centralizam seus conteúdos
-                educativos e
-                então os distribuem ao consumidor final, que pode acessá-los gratuitamente, em qualquer dispositivo e
-                a
-                qualquer momento. Assim, a gente dá voz a quem realmente entende do assunto e empodera também o
-                trabalha-
-                dor, que rapidamente pratica tudo aquilo que aprendeu, com a possibilidade de cres- cer no seu ritmo e
-                do
-                seu jeito.</p>
-            <p>Nossa missão é fazer com que grandes especialistas e empresas do agronegócio possam levar conteúdos
-                de
-                alta qualidade até as mãos de cada trabalhador do campo. Queremos fazer com que as empresas estejam
-                cada
-                vez mais presentes no dia a dia do campo e que os profissionais desse setor possam evoluir e aproveitar
-                cada
-                vez mais tudo o que ele tem a oferecer.</p>
-            <p>Se o seu negócio é o agro, o nosso é a educação. Vamos juntos?</p>
-        </div>
-        <span>
-            <div class="wrapper">
-                <h2>Um recurso de aprendizado personalizado para todos</h2>
-                <p>A Agro Academy oferece exercícios, artigos, vídeos de instrução e um painel de aprendizado
-                    personalizado que habilita os alunos a aprender no seu próprio ritmo e do seu jeito. Abordamos
-                    operação de máquinas agrícolas, manutenção de máquinas agrícolas, tecnologias embarcadas em
-                    máquinas agrícolas, agricultura de precisão e muito mais. Nossas aulas guiam os alunos do básico
-                    até o nível mais avançado, usando tecnologias de ponta. Também temos parcerias com
-                    instituições
-                    como a Fundação Shunji Nishimura de Tecnologia e fabricantes de máquinas agrícolas como a Jacto
-                    Máquinas Agrícolas, para oferecer conteúdo especializado.</p>
-        </span>
-    </div>
-    </div>
+            <ul class="content__about-list">
+                <li>
+                    <img src="./img/c1.png" />
+                    <span>Aprendizagem personalizada</span>
+                    <p>Os alunos praticam no próprio ritmo, solucionando primeiramente suas dificuldades de compreensão
+                        e,
+                        depois, acelerando o aprendizado. </p>
+                </li>
 
-    <div class="lideres" style="display: none">
-        <div class="wrapper">
-            <ul>
-                <li><img src="./img/lider1.png">
-                    <div><a href="" target="_blank">Jiro Nishimura</a><span>Atuou como presidente das empresas Máquinas
-                            Agrícolas
-                            Jacto e Unipac, ambas pertencentes ao grupo Jacto. Atualmente é presidente da Fundação
-                            Shunji Nishimura de tecnologia.</span></div>
+                <li>
+                    <img src="./img/c2.png" />
+                    <span>Conteúdo confiável</span>
+                    <p>Criada por especialistas e empresas, a plataforma da Agro Academy disponibiliza artigos e
+                        videoaulas
+                        confiáveis que abrangem adubação, pulverização e colheita.</p>
                 </li>
-                <li><img src="./img/lider2.png">
-                    <div><a href="" target="_blank">Alberto Issamu Honda</a><span>Diretor executivo da Fundação Shunji
-                            Nishimura,
-                            braço social do grupo Jacto, atualmente a fundação abriga o colégio Shunji Nishimura, SENAI
-                            e a FATEC, atendendo todos os níveis de ensino.</span></div>
-                </li>
-                <li><img src="./img/lider3.png">
-                    <div><a href="https://www.linkedin.com/in/luiztejon/" target="_blank">José Luiz Tejon
-                            Megido</a><span>Palestrante internacional, Professor e Autor.
-                            É Top of Mind de RH, considerado uma das maiores autoridades nas áreas da gestão de vendas,
-                            marketing em agronegócio, liderança, motivação e superação humana.</span></div>
-                </li>
-                <li><img src="./img/lider4.png">
-                    <div><a href="https://www.linkedin.com/in/carlos-cogo-0a39b522/" target="_blank">Carlos
-                            Cogo</a><span>Pós-Graduado em Agronegócios pela Universidade Federal do
-                            Paraná, com Especialização em Análises de Mercados. É Consultor em Agronegócios há 30
-                            anos.</span></div>
-                </li>
-                <li><img src="./img/lider5.png">
-                    <div><a href="https://www.linkedin.com/in/rodrigoloncarovich/" target="_blank">Rodrigo
-                            Loncarovich</a><span>Com uma carreira profissional voltado para o ensino
-                            no agronegócio, foi instrutor do SENAR por 10 anos e sempre inovando fundou a Agro Academy
-                            uma empresa de educação e tecnologia para o agronegócio.</span></div>
+
+                <li>
+                    <img src="./img/c3.png" />
+                    <span>Artigos e videoaulas para ajudar os professores</span>
+                    <p>Com a Agro Academy, os professores mesmo estando sem máquinas conseguem ensinar seus alunos sobre
+                        agricultura, gestão, mecanização e agricultura de precisão.</p>
                 </li>
             </ul>
-        </div>
-    </div>
 
-    <div class="nossos" style="display: none">
+        </div>
+        <div class="content__newsletter">
+            <div class="wrapper" data-aos="zoom-in-up">
+                <h2>Tire suas dúvidas com um de nossos <strong>especialistas</strong></h2>
+                <form name="" action="">
+                    <input type="text" name="name" placeholder="Pergunta: Como eu calibro meu pulverizador?" />
+                    <input type="text" name="email" placeholder="E-mail: joao@email.com.br" />
+                    <input type="submit" />
+                </form>
+
+            </div>
+            <a href="#student" class="down__arrow">
+                <img src="./img/seta.png" class="seta">
+            </a>
+        </div>
+        <img src="./img/blue.png" class="left__float" />
+    </section>
+
+
+
+    <section class="content__student" id="student">
+        <img src="./img/yellow.png" class="right__float" />
         <div class="wrapper">
-            <ul>
-                <li><img src="./img/apoiador1.png"></li>
-                <li><img src="./img/apoiador2.png"></li>
-                <li><img src="./img/apoiador3.png"></li>
-                <li><img src="./img/apoiador4.png"></li>
-                <li><img src="./img/apoiador5.png"></li>
-                <li><img src="./img/apoiador6.png"></li>
-                <li><img src="./img/apoiador7.png"></li>
-                <li><img src="./img/apoiador8.png"></li>
-                <li><img src="./img/apoiador9.png"></li>
-                <li><img src="./img/apoiador10.png"></li>
+            <div class="content__student-left" data-aos="fade-right"><img src="./img/student.png" /></div>
+            <div class="content__student-right" data-aos="fade-left">
+                <h2>Alunos <strong>estude para avançar</strong></h2>
+                <h3>Ainda não é aluno da Agro Academy?</h3>
+                <p>Desenvolva um aprendizado sólido e profundo em agricultura, gestão, mecanização, agricultura de
+                    precisãoe
+                    muito mais.</p>
+                <a href="/">Alunos, comecem aqui</a>
+            </div>
+        </div>
+        <img src="./img/yellow.png" class="left__float" />
+        <a href="#teacher" class="down__arrow">
+            <img src="./img/seta.png" class="seta">
+        </a>
+    </section>
+
+    <section class="content__teacher" id="teacher">
+        <img src="./img/greentwo.png" class="right__float" />
+        <div class="wrapper">
+            <div class="content__teacher-left" data-aos="fade-right"><img src="./img/teacher.png" /></div>
+            <div class="content__teacher-right" data-aos="fade-left">
+                <h2>Professor, juntos podemos <strong>fazer a diferença</strong></h2>
+                <h3>Inove em sua sala de aula e facilite o aprendizado de cada aluno.</h3>
+                <p>Leve a plataforma de aprendizado de agricultura, gestão, mecanização, agricultura de precisão para a
+                    sua
+                    sala de aula.</p>
+
+                <div class="content__teacher-depoiment">
+                    <strong>“Estou muito feliz, pois agora consigo me manter atualizado sobre as novas tecnologias. Com
+                        isso, me sinto mais preparado e confiante para ensinar.”</strong>
+                    <span>Gibson neres</span>
+                    <p>Instrutor senar - palmas/to</p>
+                </div>
+
+                <a href="/">Professores, comecem aqui</a>
+            </div>
+        </div>
+        <a href="#company" class="down__arrow">
+            <img src="./img/seta.png" class="seta">
+        </a>
+        <img src="./img/greentwo.png" class="left__float" />
+    </section>
+
+    <section class="content__company" id="company">
+        <img src="./img/blue.png" class="right__float" />
+        <div class="wrapper">
+            <div class="content__company-left" data-aos="fade-right"><img src="./img/company.png" /></div>
+            <div class="content__company-right" data-aos="fade-left">
+                <h2><strong>Empresas</strong></h2>
+                <h3>Ajude-nos a fazer mais</h3>
+                <p>
+                    Pedimos que a sua empresa ajude a apoiar a Agro Academy. Somos uma startup de tecnologia e educação
+                    para
+                    o agronegócio que conta com o apoio de empresas como a sua. No momento estamos buscando parceiros
+                    que
+                    queiram criar uma estratégia de criação e distribuição de conteúdo que ajude pessoas em todo o
+                    mundo. Se
+                    a sua empresa tiver interesse em se junta à Agro Academy entre em contato.
+                </p>
+                <a href="/">Empresas, comecem aqui</a>
+            </div>
+            <ul class="content__company-list">
+                <li class="content__company-item"><img src="./img/partner1.png" /></li>
+                <li class="content__company-item"><img src="./img/partner2.png" /></li>
+                <li class="content__company-item"><img src="./img/partner3.png" /></li>
+                <li class="content__company-item"><img src="./img/partner4.png" /></li>
+                <li class="content__company-item"><img src="./img/partner5.png" /></li>
             </ul>
         </div>
-    </div>
+
+        <a href="#footer" class="down__arrow">
+            <img src="./img/seta.png" class="seta">
+        </a>
+        <img src="./img/blue.png" class="left__float" />
+
+
+
+    </section>
 
     <footer id="footer" class="footer">
         <div class="footer__content">
             <img src="./img/yellow.png" class="right__float" />
             <div class="wrapper">
-                <div class="footer__left">
+                <div class="footer__left" data-aos="fade-right">
                     <p>Nossa missão é fazer com que grandes especialistas e empresas do agronegócio possam levar
                         conteúdos
                         de alta qualidade até as mãos de cada trabalhador do campo.</p>
                     <strong>A Agro Academy é uma empresa de tecnologia e educação para o campo.</strong>
                     <strong>Crie a sua <a href="/">conta gratuita</a>. É rápido e fácil.</strong>
                 </div>
-                <div class="footer__right">
+                <div class="footer__right" data-aos="fade-left">
                     <ul class="footer__right-list">
                         <li><a href="#">Sobre</a></li>
                         <li><a href="#">Nossos líderes</a></li>
@@ -350,6 +369,19 @@
                         </label>
                         <input type="submit" value="Cadastrar">
                     </form>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="action__popup">
+            <div class="action__popup-content">
+                <div class="action__popup-close"><img src="./img/closeb.png"></div>
+                <span>Deseja começar <strong>como?</strong></span>
+                <div class="action__popup-links">
+                    <a href="#">Aluno</a>
+                    <a href="#">Professor</a>
+                    <a href="#">Empresa</a>
                 </div>
             </div>
         </div>

@@ -95,3 +95,10 @@ $('.close__menu-horizontal').click(function (event) {
     $('body').removeClass('on__block-menu')
 })
 
+$('#link_popup').click(function (event) {
+    $('body').addClass('on__pop-links')
+})
+
+$('.action__popup-close').click(function (event) {
+    $('body').removeClass('on__pop-links')
+})
