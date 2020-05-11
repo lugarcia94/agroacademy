@@ -2534,3 +2534,57 @@ body.on__menu:before
 
     img
         max-width: 120px
+
+.resultado__busca
+    .topo__page
+        justify-content: flex-start
+
+        h2
+            max-width: 1130px
+            padding: 0 15px
+            margin: 0 auto
+            width: 100%
+            text-align: left
+
+    .body__search
+        background: #e0e4e6
+
+        &-list
+            max-width: 1130px
+            padding: 60px 15px
+            margin: 0 auto
+            width: 100%
+
+        &-item
+            display: flex
+            flex-wrap: wrap
+            max-width: 500px
+            width: 100%
+            margin-bottom: 20px
+
+            @media (max-width: 520px)
+                margin-bottom: 30px
+
+            > a
+                width: 100%
+                font-weight: 700
+                color: #232323
+                display: block
+                margin-bottom: 10px
+
+            >div
+                display: flex
+                align-items: center
+                width: 100%
+
+                > a
+                    max-width: 170px
+                    margin-right: 15px
+
+                > p
+                    max-width: 280px
+                    color: #4c4c4c
+                    font-size: 15px
+
+                    @media (max-width: 520px)
+                        font-size: 13px
