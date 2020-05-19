@@ -18,11 +18,11 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <link href="./theme.css" rel="stylesheet">
 
+    <link href="./theme.css" rel="stylesheet">
 </head>
 
-<body class="pages aluno__logged aluno__config">
+<body class="pages reset__pass">
 
     <header class="header" id="header">
 
@@ -62,8 +62,8 @@
                 </form>
             </div>
             <div class="header__links">
-                <a href="#" id="register">Gustavo Santos Gomes<img src="./img/down.png" /></a>
-                <a href="#" class="active" id="login">Sair</a>
+                <a href="#" id="register">Cadastre-se</a>
+                <a href="#" class="active" id="login">Entrar</a>
             </div>
             <div class="mobile__only">
                 <div class="menu__horizontal">
@@ -80,61 +80,21 @@
                 </div>
             </div>
         </div>
+
+
     </header>
 
-    <div class="second__header">
-        <span>Conﬁgurações</span>
-        <div class="second__header-bg">
-        </div>
-    </div>
-
-    <div class="cursos__list">
-        <div class="wrapper">
-            <form>
-                <h2>Informações básicas</h2>
-                <label>
-                    Nome Completo
-                    <input type="text" />
-                </label>
-                <label>
-                    Celular
-                    <input type="text" />
-                </label>
-                <label>
-                    Data de nascimento
-                    <input type="text" />
-                </label>
-                <label>
-                    <select>
-                        <option selected value="Estado">Estado</option>
-                    </select>
-                    <select>
-                        <option selected value="Cidade">Cidade</option>
-                    </select>
-                </label>
-                <input type="submit" value="Salvar alterações">
-            </form>
-            <form>
-                <h2>Senha</h2>
-                <label>
-                    Senha atual
-                    <input type="text" />
-                </label>
-                <label>
-                    Nova senha
-                    <input type="text" />
-                </label>
-                <label>
-                    Confirmar nova senha
-                    <input type="text" />
-                </label>
-
-                <input type="submit" value="Salvar senha">
-            </form>
-
-            <form>
-                <input type="submit" class="delete__acount" value="Salvar senha">
-            </form>
+    <div class="wrapper">
+        <h2>Recuperar senha</h2>
+        <div class="pass__content">
+            <div class="pass__content__left">
+                <form>
+                    <h3>Insira seu email para <strong>recuperar</strong> sua senha</h3>
+                    <label><input type="email" placeholder="nome@email.com" /></label>
+                    <input type="submit" value="Recuperar" />
+                </form>
+            </div>
+            <div class="pass__content__right"><img src="./img/recuperar.png" /></div>
         </div>
     </div>
 
@@ -142,14 +102,14 @@
         <div class="footer__content">
             <img src="./img/yellow.png" class="right__float" />
             <div class="wrapper">
-                <div class="footer__left">
+                <div class="footer__left" data-aos="fade-right">
                     <p>Nossa missão é fazer com que grandes especialistas e empresas do agronegócio possam levar
                         conteúdos
                         de alta qualidade até as mãos de cada trabalhador do campo.</p>
                     <strong>A Agro Academy é uma empresa de tecnologia e educação para o campo.</strong>
                     <strong>Crie a sua <a href="/">conta gratuita</a>. É rápido e fácil.</strong>
                 </div>
-                <div class="footer__right">
+                <div class="footer__right" data-aos="fade-left">
                     <ul class="footer__right-list">
                         <li><a href="#">Sobre</a></li>
                         <li><a href="#">Nossos líderes</a></li>
